@@ -1,0 +1,29 @@
+{
+  "name": "acura-templates",
+  "version": "1.0.0",
+  "description": "templates/sections Acura",
+  "private":true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pho3niix/Acura-Templates.git"
+  },
+  "keywords": [
+    "templates",
+    "sections",
+    "acura"
+  ],
+  "author": "Hugo Costilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pho3niix/Acura-Templates/issues"
+  },
+  "homepage": "https://github.com/pho3niix/Acura-Templates#readme",
+  "devDependencies": {
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
