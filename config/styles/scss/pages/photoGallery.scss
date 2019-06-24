@@ -1,20 +1,25 @@
+#all, #carrousel, #truck, #gallery{
+    height: 100vh;
+}
+
+#carrousel, #gallery{
+    width: 50vw;
+}
+
 div#all{
     display: flex;
-    height: 115vh;
 
-    #carrousel{
+    section#carrousel{
         display: flex;
         align-items: center;
-        width: 50vw;
-        height: 115vh;
 
         #sidebar{
             display: flex;
             align-items: flex-start;
             justify-content: center;
             width: 45vh;
-            height: 114.8vh;
-            border-top: 0.05vh solid gray; 
+            height: 99.8vh;
+            border-top: 0.1vh solid gray; 
             border-bottom: 0.1vh solid gray;
             margin-left: 4vw;
             color: white;
@@ -49,12 +54,11 @@ div#all{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 115vh;
 
         position: absolute;
 
         #image{
-            margin-top: 7vh; 
+            margin-top: 15vh; 
             width: 55vw;
             height: 60vh;
             img{
@@ -84,6 +88,52 @@ div#all{
                 background-color: rgb(22, 22, 22);
             }
 
+        }
+    }
+
+    section#gallery{
+        display: flex;
+        justify-content: flex-end;
+        z-index: -1;
+
+        div#deck{
+            width: 37vw;
+
+            #select{
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                height: 18vh;
+                margin-bottom: 1vh;
+                #out, #in{
+                    width: 50%;
+                    p{
+                        padding-left: 2vw;
+                        font-size: 1.2vw;
+                        font-weight: 600;
+                        margin-bottom: 2vh;
+                    }
+                }
+
+                #in{
+                    border-bottom: 1vh solid red;
+                }
+                #out{
+                    border-bottom: 1vh solid white;
+                }
+            }
+
+            #photos{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                height: 75vh;
+
+                img{
+                    display: inline-block;
+                    width: 18.4vw;
+                }
+            }
         }
     }
 }
