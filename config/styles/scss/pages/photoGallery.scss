@@ -12,6 +12,8 @@ div#all{
     section#carrousel{
         display: flex;
         align-items: center;
+        position: relative;
+        z-index: -1;
 
         #sidebar{
             display: flex;
@@ -103,7 +105,7 @@ div#all{
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
-                height: 18vh;
+                height: 20vh;
                 margin-bottom: 1vh;
                 #out, #in{
                     width: 50%;
@@ -127,11 +129,20 @@ div#all{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                height: 75vh;
+                height: 72.5vh;
 
                 img{
                     display: inline-block;
                     width: 18.4vw;
+                }
+
+                #square{
+                    width: 45vw;
+                    height: 49vh;
+                    bottom: -3.6vh;
+                    right: 40vw;
+                    position: absolute;
+                    z-index: 2;
                 }
             }
         }
