@@ -36,10 +36,11 @@ header{
             p{
                 font-size: .9vw;
             }
-        }
-        #menu:hover{
-            background: #A80015;
-            color: white
+
+            &:hover{
+                background: #A80015;
+                color: white
+            }
         }
     }
 }
@@ -77,8 +78,6 @@ footer{
     #choose:hover{
         color: #005eff;
     }
-
-    
 }
 
     

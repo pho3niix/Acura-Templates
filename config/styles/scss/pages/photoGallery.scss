@@ -9,7 +9,7 @@
 div#all{
     display: flex;
 
-    section#carrousel{
+        #carrousel{
         display: flex;
         align-items: center;
         position: relative;
@@ -97,8 +97,10 @@ div#all{
         display: flex;
         justify-content: flex-end;
         z-index: -1;
+        position: relative;
+        -ms-z-index: -1;
 
-        div#deck{
+           #deck{
             width: 37vw;
 
             #select{
@@ -133,13 +135,16 @@ div#all{
 
                 img{
                     display: inline-block;
-                    width: 18.4vw;
+                    width: 18.5vw;
+                    position: relative;
+                    height: auto;
+                    height: 24.3vh;
                 }
 
                 #square{
                     width: 45vw;
                     height: 49vh;
-                    bottom: -3.6vh;
+                    bottom: 6vh;
                     right: 40vw;
                     position: absolute;
                     z-index: 2;
