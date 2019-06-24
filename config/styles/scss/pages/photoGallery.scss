@@ -1,18 +1,34 @@
 div#all{
     display: flex;
-    height: 100vh;
+    height: 115vh;
 
     #carrousel{
+        display: flex;
+        align-items: center;
         width: 50vw;
-        height: 100vh;
+        height: 115vh;
         background-color: rgb(238, 238, 238);
+
+        div#truck{
+            position: absolute;
+            img{
+                width: 55vw;
+                height: 67vh;
+            }
+        }
+
+        #arrow{
+            height: 10vh;
+            width: 5vw;
+            background-color: teal;
+        }
 
         #sidebar{
             display: flex;
             align-items: flex-start;
             justify-content: center;
             width: 45vh;
-            height: 99.8vh;
+            height: 114.8vh;
             border-top: 0.05vh solid gray; 
             border-bottom: 0.1vh solid gray;
             margin-left: 4vw;
@@ -24,17 +40,17 @@ div#all{
                 align-items: flex-start;
                 flex-direction: column;
                 flex-wrap: wrap;
-                width: 72%;
+                width: 19vw;
                 height: 22vh;
 
                 span{
                     flex: 0 1 auto;
 
                     &:first-child{
-                        font-size: 3vw;
+                        font-size: 4vw;
                     }
                     &:last-child{
-                        font-size: 2vw;
+                        font-size: 2.5vw;
                     }
                     & *{
                         display: inline-block;
