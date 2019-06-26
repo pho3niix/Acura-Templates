@@ -1,14 +1,14 @@
 export default function menu(){
-    var menu = document.getElementById("nav");
+    var menu = document.getElementsByClassName("menu");
     var slide = document.getElementById("slide_m");
     var close = document.getElementById("m_close");
 
-    menu.addEventListener("click", s_menu);
+    menu[1].addEventListener("click", s_menu);
 
     close.addEventListener("click", s_close);
 
     function s_menu(){
-        slide.style.width = "35vw";
+        slide.style.width = "40vw";
     }
 
     function s_close(){
