@@ -2,18 +2,44 @@
     height: 100vh;
 }
 
-#carrousel, #gallery{
-    width: 50vw;
+div#modal{
+    overflow: auto;
+    display: none;
+    width: 100vw;
+    height: 110vh;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.8);
+    position: fixed;
+
+    #modal-content{
+         margin: auto;
+         display: block;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+
+         &{
+             animation-name: zoom;
+             animation-duration: .6s;
+         }
+
+         #m_image{
+             max-width: 100%;
+         }
+    }
 }
 
 main#all{
     display: flex;
+    justify-content: space-between;
 
         #carrousel{
         display: flex;
         align-items: center;
         position: relative;
         z-index: -1;
+        width: 50vw;
 
         #sidebar{
             display: flex;
@@ -25,6 +51,7 @@ main#all{
             border-bottom: 0.1vh solid gray;
             margin-left: 4vw;
             color: white;
+            //z-index: -1;
 
             #p_title{
                 display: flex;
@@ -51,19 +78,20 @@ main#all{
             }
         }
     }
-section#truck{
+
+    section#truck{
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        z-index: 3;
+        z-index: 0;
 
         #image{
             margin-top: 15vh; 
             width: 55vw;
             height: 60vh;
             img{
-                width: 100%;
+                width: 99.8%;
                 height: 100%;
             }
         }
@@ -95,8 +123,8 @@ section#truck{
     section#gallery{
         display: flex;
         justify-content: flex-end;
-        // z-index: -1;
         position: relative;
+        width: 40vw;
         // -ms-z-index: -1;
 
            #deck{
@@ -138,6 +166,12 @@ section#truck{
                     position: relative;
                     height: auto;
                     height: 24.3vh;
+                    transition: .1s;
+                }
+
+                .zoom:hover{
+                    opacity: .80;
+                    cursor: pointer;
                 }
 
                 #square{
@@ -146,7 +180,7 @@ section#truck{
                     bottom: 6vh;
                     right: 40vw;
                     position: absolute;
-                    z-index: 2;
+                    z-index: -1;
                 }
             }
         }
