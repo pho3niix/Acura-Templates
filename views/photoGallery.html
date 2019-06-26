@@ -4,25 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="../config/styles/css/main.css">
+    <!-- Image Icon -->
     <link rel="icon" href="../images/icon.png">
-    <link rel="stylesheet" href="../config/styles/css/normalize.css">
-      <!-- Font Awesome -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="../config/styles/css/dependencies/normalize.css">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/18516ef2f3.js"></script>
+    <!-- Main Js bundle -->
     <script src="../config/js/mainBundle.js"></script>
+    <!-- Carousel -->
+    <script src="../config/js/dependencies/slidepage.min.js"></script>
+    <!-- Title -->
     <title>Photo Gallery</title>
 </head>
 <body>
     <header class="black">
+        <div id="slide_m" class="black">
+            <div id="t_menu">
+                <div class="black menu" href="#">
+                        <img src="../images/menu.svg" alt="Menu">
+                        <p>OTRAS VERSIONES</p>
+                </div>
+                <div id="m_close">
+                    <span>X</span>
+                </div>
+            </div>
+            <div id="menu_content">
+                <section id="version">
+                    <div id="title">
+                        <h3>VERSIONES</h3>
+                    </div>
+                    <div id="pictures">
+                        <div class="s_content">
+                            <img src="../images/camioneta.png" alt="">
+                            <div id="text">
+                                <span>TECH</span>
+                                <span>$929.900</span>
+                            </div>
+                        </div>
+                        <div class="s_content">
+                            <img src="../images/camioneta.png" alt="">
+                            <div id="text">
+                                <span>A-SPEC</span>
+                                <span>$929.900</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="description">
+
+                </section>
+                <section id="t_description">
+
+                </section>
+            </div>
+        </div>
         <nav id="nav">
             <div id="logo">
                 <img src="../images/acura-vector-logo.svg" alt="">
             </div>
             
-            <a class="red" href="#" id="menu">
+            <div class="red menu" href="#">
                 <img src="../images/menu.svg" alt="Menu">
                 <p>OTRAS VERSIONES</p>
-            </a>
+            </div>
         </nav>
     </header>
     <main id="all">
@@ -34,20 +81,32 @@
                 </div>
             </div>
         </section>
-
         <section id="truck">
+            <div class="app">
                 <div id="image">
-                    <img src="../images/camioneta2.PNG" alt="truck">
+                    <img class="sp_page"  src="../images/camioneta2.PNG" alt="truck">
+                    <img class="sp_page"  src="../images/slider1.png" alt="truck">
+                    <img class="sp_page"  src="../images/bg-video.jpg" alt="truck">
                 </div>
-                <div id="arrow">
-                    <a href="#" id="btn_left" class="black">
-                        <i class="fas fa-chevron-left"></i>
-                    </a>
-                    <a href="#" id="btn_right" class="black">
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
+            </div>
+            <div id="arrow">
+                <div onclick="sp.prev()" id="btn_left" class="black">
+                    <i class="fas fa-chevron-left"></i>
                 </div>
+                <div onclick="sp.next()" id="btn_right" class="black">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
         </section>
+
+        <script>
+            var sp = new SLIDEPAGE({
+                el: ".app",
+                repeat: true,
+                realNumber: true,
+                direction: "x"
+            });
+        </script>
 
         <section id="gallery">
             <div id="deck">
@@ -60,17 +119,15 @@
                     </div>
                 </div>
 
-                
-
                 <div id="photos">
                     
+                    <img class="zoom" src="../images/camioneta.png" alt="">
                     <img class="zoom" src="../images/bg-galeria.jpg" alt="">
                     <img class="zoom" src="../images/bg-galeria.jpg" alt="">
                     <img class="zoom" src="../images/bg-galeria.jpg" alt="">
                     <img class="zoom" src="../images/bg-galeria.jpg" alt="">
                     <img class="zoom" src="../images/bg-galeria.jpg" alt="">
-                    <img class="zoom" src="../images/bg-galeria.jpg" alt="">
-                    
+
                     <span id="square" class="red">
                         
                     </span>
@@ -79,11 +136,12 @@
         </section>
 
         <div id="modal">
-            <span class="close"></span>
+            <span id="close">X</span>
             <div id="modal-content">
                 <img id="m_image" alt="">
             </div>
         </div>
+
     </main>
     <footer class="black">
         <a  id="choose" href="#">
