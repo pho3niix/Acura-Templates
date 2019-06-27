@@ -78,19 +78,19 @@ main#all{
                 width: 19vw;
                 height: 22vh;
 
-                span{
-                    flex: 0 1 auto;
+                // span{
+                //     flex: 0 1 auto;
 
-                    &:first-child{
-                        font-size: 4vw;
-                    }
-                    &:last-child{
-                        font-size: 2.5vw;
-                    }
-                    & *{
-                        display: inline-block;
-                    }
-                }
+                //     &:first-child{
+                //         font-size: 4vw;
+                //     }
+                //     &:last-child{
+                //         font-size: 2.5vw;
+                //     }
+                //     & *{
+                //         display: inline-block;
+                //     }
+                // }
             }
         }
     }
