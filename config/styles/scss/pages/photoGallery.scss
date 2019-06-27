@@ -186,12 +186,17 @@ main#all{
                 flex-wrap: wrap;
                 justify-content: space-between;
                 height: 72.5vh;
-                img{
+                .zoom{
                     display: inline-block;
                     width: 18.5vw;
                     position: relative;
                     height: auto;
                     height: 24.3vh;
+                    cursor: zoom-in;
+                }
+                &::before{
+                    content: url('../../../../images/full-screen.png');
+                    position: absolute;
                 }
             }
 
