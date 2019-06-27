@@ -1,0 +1,1074 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+   @font-face {
+         font-family: 'fontello';
+         src: url('./font/fontello.eot?83127260');
+         src: url('./font/fontello.eot?83127260#iefix') format('embedded-opentype'),
+              url('./font/fontello.woff?83127260') format('woff'),
+              url('./font/fontello.ttf?83127260') format('truetype'),
+              url('./font/fontello.svg?83127260#fontello') format('svg');
+         font-weight: normal;
+         font-style: normal;
+       }
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+}
+a:hover{
+  text-decoration: none;
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+}
+header, footer{
+  background: #000;
+}
+.no-gutters{
+  padding: 0 !important;
+}
+.logotipo{
+  width: 80%;
+  margin-left: 50px;
+}
+
+.menu a{
+  background: #D0021B;
+  color: white;
+  padding: 30px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+.menu a:hover , .cta:hover {
+  background: #A80015;
+  color: white;
+  cursor: pointer;
+}
+.menu-icon{
+  width: 35px;
+}
+.menu p{
+  font-size: 14px;
+  padding-left: 20px;
+}
+.video , .galeria{
+  background: url('../../../../images/cars/bg-video.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+.video{
+  background: url('../../../../images/cars/bg-galeria.jpg') no-repeat;
+  background-size: cover;
+}
+.btn-over{
+  position: relative;
+  bottom: -135px;
+  left: -18px;
+  width: 70%;
+}
+.overlay{
+  background: rgba(208,2,27,0.60);
+  padding: 40px;
+  color: white;
+  position: absolute;
+  top: 350px;
+  width: 50%;
+  z-index: 998;
+}
+.overlay .content-overlay h3{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 5px;
+}
+
+.overlay .content-overlay h2{
+  font-size: 75px;
+  font-weight: 100;
+}
+.overlay .content-overlay span{
+  border: 1px solid white;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+}
+.overlay .content-overlay a{
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 25px;
+}
+.overlay-black{
+  background: black;
+  position: absolute;
+  height: 50px;
+  top: 700px;
+  right: 0;
+  width: 60%;
+  z-index: 999;
+}
+.block-red{
+  position: absolute;
+  top: 422px;
+  left: 5%;
+  background: rgba(208,2,27,1);
+  width: 15%;
+  height: 432px;
+}
+/*Carrusel*/
+.owl-carousel .owl-stage-outer{
+  height: 810px;
+}
+.owl-theme .owl-nav.disabled+.owl-dots{
+  position: relative;
+  top: -450px;
+  left: -730px;
+}
+.owl-theme .owl-dots .owl-dot span{
+  background: white !important;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+  background: #A80015 !important;
+}
+.owl-carousel.owl-loaded{
+  height: 810px !important;
+}
+
+.banner-car{
+  background: url('../../../../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  padding: 90px 0;
+}
+.car{
+  text-align: right;
+  width: 60%;
+  float: right;
+}
+.features{
+  padding: 40px 40px ;
+  background: rgba(255,255,255,0.6);
+  width: 35%;
+  float: left;
+  height: 300px;
+}
+.features .modelo h2{
+  font-size: 32px;
+  font-family: 'Work Sans', sans-serif;
+}
+.features .color p{
+  font-size: 52px;
+  font-family: 'Oswald', sans-serif;
+}
+.features .specs p{
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+}
+.features .specs h3{
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+}
+.cta{
+  padding: 20px 45px;
+  background: red;
+  color: white;
+  display: inline-block;
+}
+.cta i{
+  font-size: 20px;
+  color: white;
+}
+.colors-car h3{
+  font-size: 14px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.circle{
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1 px solid black;
+  margin-right: 20px;
+}
+.bg-red{
+  background: #D0021B;
+}
+.bg-silver{
+  background: #D8D8D8;
+}
+.bg-black{
+  background: black;
+}
+.bg-gray{
+  background: #373B3E;
+}
+.bg-blue{
+  background: #000D2C;
+}
+footer div{
+  color: white;
+  font-size: 24px !important;
+  letter-spacing: 5px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+}
+footer div h5{
+  font-size: 12px !important;
+}
+#choose:hover{
+  color: #005eff;
+}
+
+/** 360 view **/
+
+#close_r{
+  display: none;
+  color: black; 
+  font-size: 25px; 
+  font-weight: 600; 
+  cursor: pointer;
+  position: absolute;
+  right: 3vw;
+}
+
+#rangeContent{
+  width: 50vw;
+  position: relative;
+  right: 40vw;
+}
+
+#range{
+  display: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3vh;
+  background: #232323;
+  opacity: 0.7;
+  transition: opacity .2s;
+  border-radius: 10px;
+}
+
+#p_360{
+  display: 
+  block;
+  cursor: pointer;
+}
+
+/* Modal style */
+#modal, #modal2{
+  display: none;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 130vh;
+  top: 0;
+  background-color:rgba(0,0,0,0.8);
+  z-index: 3;
+  overflow: hidden;
+  animation-name: appear;
+  animation-duration: .5s;
+}
+
+@keyframes appear{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+#modalContent{
+  height: 55vh;
+}
+
+#formContent{
+  height: 60vh;
+}
+
+#modalContent, #formContent{
+  top: 25vh;
+  width: 50vw;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#close, #closeF{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  font-size: 2.5vw;
+  width: 15%;
+  height: 10vh;
+  text-align: center;
+  font-weight: normal;
+}
+
+#close span, #closeF span{
+  cursor: pointer;
+}
+
+#log, #logo{
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  height: 10vh;
+}
+
+#log img, #logo img{
+  width: 12vw;
+}
+
+#text{
+  width: 65%;
+  margin-bottom: 2vh;
+}
+
+#text p{
+  font-weight: normal;
+  text-align: center;
+  line-height: 2vh;
+}
+
+#forms{
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  width: 100%;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#send input:first-child{
+  height: 6vh;
+  width: 20vw;
+}
+#send input:last-child{
+  background-color: red;
+  margin-left: 1vw;
+  border: none;
+  text-decoration: none;
+  color: white;
+  width: 12vw;
+  height: 6vh;
+  font-size: 1.2vw;
+}
+
+#send input:last-child:hover, #sends input:last-child:hover{
+  background: #A80015;
+}
+
+#terms{
+  display: flex;
+  height: 3.4vh;
+  width: 75%;
+  justify-content: flex-end;
+  margin-top: 1vh;
+}
+
+#terms label:first-child{
+  margin-left: 1vw;
+}
+
+#terms label:last-child{
+  margin-left: 1vw;
+  font-size: 1vw;
+  font-weight: normal;
+}
+
+/* Modal 2 */
+#sends{
+  display: flex;
+  flex-direction: column;
+}
+
+#sends input:last-child{
+  background-color: red;
+  margin-left: 1vw;
+  border: none;
+  text-decoration: none;
+  color: white;
+  width: 30vw;
+  height: 6vh;
+  font-size: 1.2vw;
+}
+
+#sends > input{
+  margin: 2vh;
+  width: 30vw;
+  height: 4vh;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+/* Menus interactivos */
+header {
+  height: 9.6vh; }
+
+  header .menu {
+    background-color: rgb(0, 0, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 13.5vh;
+    min-width: 16vw;
+    color: white; }
+    header .menu img {
+      width: 2.5vw; }
+    header .menu p {
+      font-size: .9vw; }
+
+    #slide_m {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    width: 0vw;
+    right: 0;
+    z-index: 3;
+    overflow: hidden;
+    color: white;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+
+    #slide_m #t_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+
+    #slide_m #t_menu #m_close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    height: 13vh;
+    width: 2vw;
+    margin-left: 1vw;
+    font-size: 2vw;
+    cursor: pointer; }
+
+    #slide_m #menu_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+    #slide_m #menu_content .title {
+    margin-bottom: 1vh;
+    margin-left: 4vw; }
+
+    #slide_m #menu_content #version {
+    margin-bottom: 3vh; }
+
+    #slide_m #menu_content #version #pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+
+    #slide_m #menu_content #version #pictures .s_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    height: 15vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 4vw;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+
+    #slide_m #menu_content #version #pictures .s_content img {
+    width: 9vw;
+    height: 10vh;
+    margin: 2vw;
+    margin-top: 5.7vh; }
+
+    #slide_m #menu_content #version #pictures .s_content:hover {
+    background-color: #424242; }
+
+    #slide_m #menu_content #version #pictures #text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 15%; }
+
+    #slide_m #menu_content #version #pictures #text span:first-child {
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    width: 15vw;
+    border-bottom: 1px solid gray;
+    font-weight: bold; }
+
+    #slide_m #menu_content #version #pictures #text span:last-child {
+    padding-top: 1vh;
+    padding-left: 1vh;
+    font-weight: normal; }
+
+    #slide_m #menu_content #description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 480px; }
+
+    #slide_m #menu_content #description #diferences {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 2vh; }
+
+    #slide_m #menu_content #description #diferences .item {
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    width: 28vw;
+    border-bottom: 1px solid gray; }
+
+    #slide_m #menu_content #description #diferences .item p {
+    font-size: 2.5vh; }
+
+    #slide_m #menu_content #m_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 4vh;
+    width: 28vw; }
+
+    #slide_m #menu_content #m_info #ficha {
+    width: 16vw; }
+
+    #slide_m #menu_content #m_info #tecnica,   #slide_m #menu_content #m_info #ficha {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+    #slide_m #menu_content #m_info #tecnica p,   #slide_m #menu_content #m_info #ficha p {
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-size: 1.1vw; }
+
+    #slide_m #menu_content #m_info .enlace {
+  border: .6vh solid white;
+  width: 4vw;
+  height: 8vh;
+  cursor: pointer; }
+
+    #nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+    #nav #logo {
+    width: 11.6vw;
+    margin-left: 4.7vw; }
+
+    #nav #logo img {
+    width: 100%; }
+
+    #nav .menu {
+    cursor: pointer;
+    z-index: 1; }
+
+    #nav .menu img {
+    width: 2.5vw; }
+
+    #nav .menu p {
+    font-size: .9vw; }
+    
+    #nav .menu:hover {
+    background: #A80015;
+    color: white; }
+
+  /*  footer menu */
+  #footerMenu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    z-index: 3;
+    -webkit-z-index: 3;
+    -o-z-index: 3;
+    -moz-z-index: 3;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    bottom: 0vh; }
+      #footerMenu #f_menu {
+      width: 100%;
+      background-color: white;
+      height: 39vh;
+      border-top: 1px solid #b4b4b4;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+        #footerMenu #f_menu #title,   #footerMenu #f_menu #ft_content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        #footerMenu #f_menu #title {
+        background-color: white;
+        height: 10vh;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        font-weight: normal;  }
+          #footerMenu #f_menu #title p {
+          font-size: 1.2vw;
+          letter-spacing: .5vh; }
+        #footerMenu #f_menu #ft_content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: white;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        height: 39vh;
+        width: 100%; }
+          #footerMenu #f_menu #ft_content .car {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin-right: 2vw;
+          margin-left: 2vw; }
+            #footerMenu #f_menu #ft_content .car img {
+            width: 11vw;
+            margin-bottom: 2vh; }
+            #footerMenu #f_menu #ft_content .car p {
+            font-weight: bold; }
+      #footerMenu #f_close {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      min-height: 6vh;
+      width: 6vw;
+      background-color: red;
+      cursor: pointer; }
+        #footerMenu #f_close i {
+        font-size: 3vw;
+        color: white; }
+
+/*Icons*/
+.demo-icon{
+  color: white;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding: 6px 0 0 0;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
