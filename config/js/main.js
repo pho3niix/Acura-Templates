@@ -1,4 +1,4 @@
-import pic_360 from './events/360_pic';
+// import pic_360 from './events/360_pic';
 import photos from './events/photos';
 import menu from './events/menu';
 
