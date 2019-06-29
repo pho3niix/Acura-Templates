@@ -344,6 +344,10 @@ footer div h5{
   right: 3vw;
 }
 
+#car_360{
+  width: 45vw;
+}
+
 #rangeContent{
   width: 50vw;
   position: relative;
