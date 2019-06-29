@@ -67,7 +67,7 @@ function range(){
                        image.src = _6;
                    }
                }
-           }else if(range.value>=7 && range.value<=12){
+           }else{
                 if(range.value<=9){
                     if(range.value == 7){
                         image.src = _7;
@@ -86,40 +86,42 @@ function range(){
                     }
                 }
            }
-       }else if(range.value>=13 && range.value<=18){
-            if(range.value<=15){
-                if(range.value == 13){
-                    image.src = _13;
-                }else if(range.value == 14){
-                    image.src = _14;
+       }else if(range.value>=13 && range.value<=24){
+            if(range.value<=18){
+                if(range.value<=15){
+                    if(range.value == 13){
+                        image.src = _13;
+                    }else if(range.value == 14){
+                        image.src = _14;
+                    }else{
+                        image.src = _15;
+                    }
                 }else{
-                    image.src = _15;
+                    if(range.value == 16){
+                        image.src = _16;
+                    }else if(range.value == 17){
+                        image.src = _17;
+                    }else{
+                        image.src = _18;
+                    }
                 }
             }else{
-                if(range.value == 16){
-                    image.src = _16;
-                }else if(range.value == 17){
-                    image.src = _17;
+                if(range.value<=21){
+                    if(range.value == 19){
+                        image.src = _19;
+                    }else if(range.value == 20){
+                        image.src = _20;
+                    }else{
+                        image.src = _21;
+                    }
                 }else{
-                    image.src = _18;
-                }
-            }
-       }else if(range.value>=19 && range.value<=24){
-            if(range.value<=21){
-                if(range.value == 19){
-                    image.src = _19;
-                }else if(range.value == 20){
-                    image.src = _20;
-                }else{
-                    image.src = _21;
-                }
-            }else{
-                if(range.value == 22){
-                    image.src = _22;
-                }else if(range.value == 23){
-                    image.src = _23;
-                }else{
-                    image.src = _24;
+                    if(range.value == 22){
+                        image.src = _22;
+                    }else if(range.value == 23){
+                        image.src = _23;
+                    }else{
+                        image.src = _24;
+                    }
                 }
             }
        }
