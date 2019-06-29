@@ -1,7 +1,7 @@
 // Inicializar las funciones del sitio
 
 window.onload = function(){
-    range();
+    image_360();
     brochure();
     cotizar();
     sideMenu();
@@ -10,7 +10,7 @@ window.onload = function(){
 
 // Funcion 360 para imagen detalle auto
 
-function range(){
+function image_360(){
     var btn_360 = document.getElementById("p_360");
     var range = document.getElementById("range");
     var close = document.getElementById("close_r");
@@ -86,7 +86,7 @@ function range(){
                     }
                 }
            }
-       }else if(range.value>=13 && range.value<=24){
+       }else{
             if(range.value<=18){
                 if(range.value<=15){
                     if(range.value == 13){
