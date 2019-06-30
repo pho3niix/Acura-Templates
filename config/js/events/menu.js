@@ -1,6 +1,8 @@
 export default function menu(){
     sideMenu();
     footerMenu();
+    ficha_modal();
+    tecni_modal();
 }
 
 function sideMenu(){
@@ -38,4 +40,34 @@ function footerMenu(){
     function ft_close(){
         f_menu.style.height = "0";
     }
+}
+
+function ficha_modal(){
+    var fmodal = document.getElementById("m_ficha");
+    var close_ficha = document.getElementById("fs_close");
+
+    close_ficha.addEventListener("click", function(){
+        fmodal.style.display = "none";
+    });
+
+    var btn = document.getElementsByClassName("enlace");
+
+    btn[0].addEventListener("click", function(){
+        fmodal.style.display = "flex";
+    });
+}
+
+function tecni_modal(){
+    var tmodal = document.getElementById("m_tecni");
+    var close_tecni = document.getElementById("ti_close");
+
+    close_tecni.addEventListener("click", function(){
+        tmodal.style.display = "none";
+    });
+
+    var btn = document.getElementsByClassName("enlace");
+
+    btn[1].addEventListener("click", function(){
+        tmodal.style.display = "flex";
+    });
 }

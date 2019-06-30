@@ -215,6 +215,129 @@ header{
 main#all{
     height: 100vh;
 
+    #m_ficha, #m_tecni{
+        display: none;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        height: 130vh;
+        top: 0;
+        background-color:rgba(0,0,0,0.8);
+        z-index: 3;
+        overflow: hidden;
+        animation-name: appear;
+        animation-duration: .5s;
+      }
+      
+      @keyframes appear{
+        from{
+          opacity: 0;
+        }
+        to{
+          opacity: 1;
+        }
+      }
+      
+      #f_content, #t_content{
+        height: 60vh;
+      }
+      
+      #f_content, #t_content{
+        top: 25vh;
+        width: 50vw;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      #fa_close, #te_close{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        font-size: 2.5vw;
+        width: 15%;
+        height: 10vh;
+        text-align: center;
+        font-weight: normal;
+      }
+      
+      #fa_close span, #te_close span{
+        cursor: pointer;
+      }
+      
+    /*
+      #log, #logo{
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        height: 10vh;
+      }
+      
+      #log img, #logo img{
+        width: 12vw;
+      }
+      
+      #text{
+        width: 65%;
+        margin-bottom: 2vh;
+      }
+      
+      #text p{
+        font-weight: normal;
+        text-align: center;
+        line-height: 2vh;
+      }
+      
+      #forms{
+        display: flex;
+        flex-direction: column;
+        height: 10vh;
+        width: 100%;
+        // justify-content: center;
+        align-items: center;
+      }
+      
+      #send input:first-child{
+        height: 6vh;
+        width: 20vw;
+      }
+      #send input:last-child{
+        background-color: red;
+        margin-left: 1vw;
+        border: none;
+        text-decoration: none;
+        color: white;
+        width: 12vw;
+        height: 6vh;
+        font-size: 1.2vw;
+      }
+      
+      #send input:last-child:hover, #sends input:last-child:hover{
+        background: #A80015;
+      }
+      
+      #terms{
+        display: flex;
+        height: 3.4vh;
+        width: 75%;
+        justify-content: flex-end;
+        margin-top: 1vh;
+      }
+      
+      #terms label:first-child{
+        margin-left: 1vw;
+      }
+      
+      #terms label:last-child{
+        margin-left: 1vw;
+        font-size: 1vw;
+        font-weight: normal;
+      }
+    */
+
     #footerMenu{
         position: fixed;
         width: 100%;
