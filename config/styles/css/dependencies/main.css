@@ -522,6 +522,87 @@ footer div h5{
   border-bottom: 2px solid gray;
 }
 
+/* Modals ficha tecnica y especificaciones */
+ #m_ficha,  #m_tecni {
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 130vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  overflow: hidden;
+  -webkit-animation-name: appear;
+  animation-name: appear;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+ #f_content,  #t_content {
+  height: 60vh;
+}
+
+ #f_content,  #t_content {
+  top: 25vh;
+  width: 50vw;
+  position: relative;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+ #fa_close,  #te_close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-size: 2.5vw;
+  width: 15%;
+  height: 10vh;
+  text-align: center;
+  font-weight: normal;
+}
+
+ #fa_close span,  #te_close span {
+  cursor: pointer;
+}
+
 /* Menus interactivos */
 header {
   height: 9.6vh; }
