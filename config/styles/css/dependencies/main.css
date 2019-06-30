@@ -741,10 +741,21 @@ header {
     font-size: 1.1vw; }
 
     #slide_m #menu_content #m_info .enlace {
-  border: .6vh solid white;
-  width: 4vw;
-  height: 8vh;
-  cursor: pointer; }
+      border: .6vh solid white;
+      width: 4vw;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+    
+      #slide_m #menu_content #m_info .enlace #pdf{
+        width: 65%;
+      }
+
+      #slide_m #menu_content #m_info .enlace #tecni{
+        width: 85%;
+      }
 
     #nav {
     display: -webkit-box;

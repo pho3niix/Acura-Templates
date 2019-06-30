@@ -166,6 +166,17 @@ header{
                     width: 2.5vw;
                     height: 5vh;
                     cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    #pdf{
+                        width: 65%;
+                    }
+
+                    #tecni{
+                        width: 85%;
+                    }
                 }
             }
         }
