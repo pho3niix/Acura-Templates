@@ -19,10 +19,23 @@ function image_360(){
     var image = document.getElementById("car_360");
 
     // Variables de ruta e imagen estatica
-    var ruta = "../images/cars/";
-    var i_static = ruta + "camioneta.png";
+    const ruta = "../images/cars/";//Esta constante representa la ruta donde estan alojadas las imagenes, si se desea cambiar solamente modificar el texto entre comillas
+    var i_static = ruta + "camioneta.png";//variable para la imagen estatica
 
     // Variables de imagenes 360
+    // Para modificar las imagenes solamente cambiar el nombre de a continuacion
+
+    /* EJEMPLO:
+    Para cambiar la primera imagen
+    la variable es "_1", de ahi solamente cambiar el texto en color verde
+
+    var _1 = ruta + "02 mdx exterior 01.png";//<-este es el original
+
+    var _1 = ruta + "02 mdx exterior 22.png";//<-este es despues de la modificacion
+
+    NOTA: la constante "ruta" no se modifica ya que esta definida en la parte superior
+    */
+
     var _1 = ruta + "02 mdx exterior 01.png";
     var _2 = ruta + "02 mdx exterior 02.png";
     var _3 = ruta + "02 mdx exterior 03.png";

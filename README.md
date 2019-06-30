@@ -5,5 +5,8 @@ Templates Agencia de autos Acura.
 `cd config`
 `npm install`
 
-## Abrir sitio web
-`cd views/index.html`
+## Para modificar las imagens del 360
+`cd config/dependencies/main.js`
+
+## Unificar archivos javascript con webpack
+`npm run build`
