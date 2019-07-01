@@ -190,6 +190,7 @@ main#all{
                 justify-content: space-between;
                 .image{
                     height: 24.35vh;
+                    display: flex;
                     .zoom{
                         display: inline-block;
                         width: 18.5vw;
@@ -201,7 +202,7 @@ main#all{
                         position: absolute;
                         width: 1.5vw;
                         height: 2.5vh;
-                        margin-left: -3vw;
+                        margin-left: 16vw;
                         margin-top: 20vh;
                     }
                 }
