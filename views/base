@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="../config/styles/css/main.css">
+        <!-- Image Icon -->
+        <link rel="icon" href="../images/icon.png">
+        <!-- Normalize -->
+        <link rel="stylesheet" href="../config/styles/css/dependencies/normalize.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/18516ef2f3.js"></script>
+        <!-- Main Js bundle -->
+        <script src="../config/js/mainBundle.js"></script>
+        <!-- Carousel -->
+        <script src="../config/js/dependencies/slidepage.min.js"></script>
+        <!-- Title -->
+        <title>Especificaciones</title>
+</head>
+<body>
+    <header class="black">
+        <div id="slide_m" class="black">
+            <div id="t_menu">
+                <div class="black menu" href="#">
+                        <img src="../images/menu.svg" alt="Menu">
+                        <p>OTRAS VERSIONES</p>
+                </div>
+                <div id="m_close">
+                    <span>X</span>
+                </div>
+            </div>
+            <div id="menu_content">
+                <section id="version">
+                    <div class="title">
+                        <h4>VERSIONES</h4>
+                    </div>
+                    <div id="pictures">
+                        <div class="s_content">
+                            <img src="../images/cars/camioneta.png" alt="">
+                            <div id="text">
+                                <span>TECH</span>
+                                <span>$929.900</span>
+                            </div>
+                        </div>
+                        <div class="s_content">
+                            <img src="../images/cars/camioneta.png" alt="">
+                            <div id="text">
+                                <span>A-SPEC</span>
+                                <span>$929.900</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="description">
+                    <div class="title">
+                        <h4>COMPARATIVA DE VERSIONES</h4>
+                    </div>
+                    <div id="diferences">
+                        <div class="item">
+                            <p>Rines 19''</p>
+                        </div>
+                        <div class="item">
+                            <p>Manija de Puertas Cromadas</p>
+                        </div>
+                        <div class="item">
+                            <p>Faros de Niebla de LED</p>
+                        </div>
+                        <div class="item">
+                            <p>Consola Central en Madra</p>
+                        </div>
+                        <div class="item">
+                            <p>Limpia Faros</p>
+                        </div>
+                        <div class="item">
+                            <p>Luz Interior ambiental Roja</p>
+                        </div>
+                        <section id="m_info">
+                                <div id="ficha">
+                                <div class="enlace">
+                                    <img src="../images/pdf.PNG" alt="" id="pdf">
+                                </div>
+                                <div class="txt">
+                                    <p>
+                                        VER <br>
+                                        FICHA TECNICA
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="tecnica">
+                                <div class="enlace">
+                                    <img id="tecni" src="../images/tecni.PNG" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>
+                                        ESPECIFICACIONES <br>
+                                        TECNICAS
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <nav id="nav">
+            <div id="logo">
+                <a href="index.html"><img class="logotipo" src="../images/acura-vector-logo.svg" alt="Acura" srcset="../images/acura-vector-logo.svg"></a>
+            </div>
+            
+            <div class="red menu" href="#">
+                <img src="../images/menu.svg" alt="Menu">
+                <p>OTRAS VERSIONES</p>
+            </div>
+        </nav>
+    </header>
+    <main id="all">
+        <div id="footerMenu">
+            <div id="f_close">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div id="f_menu">
+                <div id="title">
+                    <p>ELEGIR OTRO ACURA</p>
+                </div>
+                <div id="ft_content">
+                    <div class="car">
+                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="r_footer" class="black">
+        <div  id="choose">
+            <i class="fas fa-home"></i>
+            <p>ELEGIR OTRO ACURA</p>
+        </div>
+    </footer>
+</body>
+</html>
