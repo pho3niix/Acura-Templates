@@ -11,17 +11,33 @@ section#animations{
         height: 75vh;
         background-color: rgb(0, 0, 0);
         transition: .5s;
-        &.moves2{
-            background-color: rgb(175, 0, 0);
+        
+        &.moves-1{
+            background-color: rgb(255, 0, 0);
+            height: 75vh;
+            width: 55vw;
+            transform: translate(0, -0vh);
+        }
+
+        &.moves-2{
+            background-color: rgb(255, 0, 0);
             height: 35vh;
             width: 55vw;
             transform: translate(0, -40vh);
         }
-        &.moves-1{
-            background-color: rgb(175, 0, 0);
+
+        &.moves2{
+            background-color: rgb(255, 0, 0);
             height: 35vh;
             width: 55vw;
             transform: translate(0, -40vh);
+        }
+
+        &.moves3{
+            background-color: rgb(255, 0, 0);
+            height: 75vh;
+            width: 55vw;
+            transform: translate(0, -0vh);
         }
     }
 
@@ -39,25 +55,44 @@ section#animations{
             width: 90vh;
             transform: translate(26vw, 0vw);
         }
-        
-        &.move-1{
-            height: 93vh;
-            width: 90vh;
-            transform: translate(26vw, 0vw);
-            background-color: black;
-        }
-        
+
         &.move2{
             height: 93vh;
             width: 90vh;
             transform: translate(26vw, 0vw);
             background-color: black;
         }
+
+        &.move3{
+            height: 50vh;
+            width: 90vh;
+            transform: translate(26vw, 0vw);
+            background-color: black;
+        }
+        
+        &.move-1{
+            height: 50vh;
+            width: 90vh;
+            transform: translate(26vw, 0vw);
+            background-color: black;
+        }
+
+        
         &.move-2{
+            height: 93vh;
+            width: 90vh;
+            transform: translate(26vw, 0vw);
+            background-color: black;
+        }
+
+        &.move-3{
             height: 60vh;
             width: 90vh;
             transform: translate(26vw, 0vw);
         }
+        
+        
+        
     }
 }
 
@@ -142,7 +177,7 @@ main#s_all{
                 input{
                     border: none;
                     text-decoration: none;
-                    background-color: rgb(255, 0, 0);
+                    background-color: rgb(186, 0, 0);
                     padding: 1vw;
                     padding-left: 2.5vw;
                     padding-right: 2.5vw;
