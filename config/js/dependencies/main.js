@@ -14,6 +14,7 @@ window.onload = function(){
 function changeColor(){
     var blue = document.getElementById("blue-btn");
     var gray = document.getElementById("gray-btn");
+    var white = document.getElementById("white-btn");
     var cars = document.getElementById("car_360");
 
     blue.addEventListener("click", function(){
@@ -21,7 +22,11 @@ function changeColor(){
     });
 
     gray.addEventListener("click", function(){
-        cars.src = "../images/cars/MDX GRAY.png";
+        cars.src = "../images/cars/mdx-gris.png";
+    });
+
+    white.addEventListener("click", function(){
+        cars.src = "../images/cars/camioneta.png";
     });
 }
 
