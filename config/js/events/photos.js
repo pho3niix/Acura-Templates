@@ -1,4 +1,4 @@
-export default function photos(){
+export default function pictures(){
     gallery();
     btn_change();
 }
