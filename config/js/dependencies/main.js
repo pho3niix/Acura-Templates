@@ -8,6 +8,21 @@ window.onload = function(){
     footerMenu();
     ficha_modal();
     tecni_modal();
+    changeColor();
+}
+
+function changeColor(){
+    var blue = document.getElementById("blue-btn");
+    var gray = document.getElementById("gray-btn");
+    var cars = document.getElementById("car_360");
+
+    blue.addEventListener("click", function(){
+        cars.src = "../images/cars/MDX BLACK.png";
+    });
+
+    gray.addEventListener("click", function(){
+        cars.src = "../images/cars/MDX GRAY.png";
+    });
 }
 
 // Funcion 360 para imagen detalle auto
