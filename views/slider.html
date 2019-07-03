@@ -13,7 +13,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/18516ef2f3.js"></script>
     <!-- Main Js bundle -->
-    <script src="../config/js/mainBundle.js"></script>
+    <!-- <script src="../config/js/mainBundle.js"></script> -->
     <!-- Carousel -->
     <script src="../config/js/dependencies/slidepage.min.js"></script>
     <!-- Title -->
@@ -26,6 +26,111 @@
                 <a href="index.html"><img class="logotipo" src="../images/acura-vector-logo.svg" alt="Acura" srcset="../images/acura-vector-logo.svg"></a>
             </div>
         </nav>
-    </header>    
+    </header>
+    <section id="animations">
+        <div id="b_square">
+
+        </div>
+        <div id="r_square">
+
+        </div>
+    </section>
+    <main id="s_all">
+        <section id="s_info">
+            <div id="m_info">
+                <div id="s_carousel">
+                    <div id="c_titles" class="app">
+                        <img class="sp_page" src="../images/logos_name/MDX.PNG" alt="">
+                        <img class="sp_page" src="../images/logos_name/TLX.PNG" alt="">
+                        <img class="sp_page" src="../images/logos_name/RDX.PNG" alt="">
+                    </div>
+                    <div id="c_text">
+                        <p>EL LADO PROVOCATIVO DE LA GRANDEZA</p>
+                    </div>
+                    <div id="price" class="app3">
+                        <p class="sp_page">Desde: $929,900</p>
+                        <p class="sp_page">Desde: $969,900</p>
+                        <p class="sp_page">Desde: $950,900</p>
+                    </div>
+                    <div id="know">
+                        <input type="button" value="CONOCER" id="btn_know">
+                    </div>
+                    <div id="c_images" class="app2">
+                        <img  class="sp_page truck" src="../images/cars/camioneta.png" alt="">
+                        <img  class="sp_page car" src="../images/cars/rlx.png" alt="">
+                        <img  class="sp_page car" src="../images/cars/tlx.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="s_arrow">
+                <div onclick="sp.prev();sps.prev();spx.prev()" id="btns_left" class="black">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div onclick="sp.next();sps.next();spx.next()" id="btns_right" class="black">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <script>
+                var sp = new SLIDEPAGE({
+                    el: ".app",
+                    repeat: true,
+                    realNumber: true,
+                    direction: "x"
+                });
+
+                var sps = new SLIDEPAGE({
+                    el: ".app2",
+                    repeat: true,
+                    realNumber: true,
+                    direction: "x"
+                });
+
+                var spx = new SLIDEPAGE({
+                    el: ".app3",
+                    repeat: true,
+                    realNumber: true,
+                    direction: "x"
+                });
+            </script>
+            <script>
+                window.onload = function(){
+                    var move1 = document.getElementById("btns_right");
+                    var move2 = document.getElementById("btns_left");
+                    var r_square = document.getElementById("r_square");
+                    var b_square = document.getElementById("b_square");
+                    var clicks = 0;
+
+                    move1.addEventListener("click", function(){
+                        clicks +=1;
+
+                        r_square.setAttribute("class", "move"+clicks);
+                        b_square.setAttribute("class", "moves"+clicks);
+
+                        if(clicks==3){
+                            r_square.removeAttribute("class", "move");
+                            clicks = 0;
+                        }
+                    }, false);
+
+                    move2.addEventListener("click", function(){
+                        clicks -=1;
+
+                        r_square.setAttribute("class", "move"+clicks);
+                        b_square.setAttribute("class", "moves"+clicks);
+
+                        if(clicks == -3){
+                            r_square.removeAttribute("class", "move");
+                            clicks = 0;
+                        }
+                    });
+                }
+            </script>
+        </section>
+        <section id="g_square">
+            <div id="gray">
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>

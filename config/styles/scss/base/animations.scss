@@ -15,3 +15,12 @@
         opacity: 0;
     }
 }
+
+@keyframes move1{
+    from{
+        right: -9vw;
+    }
+    to{
+        right: -35vw;
+    }
+}

@@ -1,0 +1,186 @@
+section#animations{
+    position: absolute;
+    height: 98vh;
+    display: flex;
+    justify-content: flex-end;
+    z-index: -1;
+
+    #b_square{
+        align-self: flex-end;
+        width: 55vw;
+        height: 75vh;
+        background-color: rgb(0, 0, 0);
+        transition: .5s;
+        &.moves2{
+            background-color: rgb(255, 0, 0);
+            height: 35vh;
+            width: 55vw;
+            transform: translate(0, -40vh);
+        }
+        &.moves-1{
+            background-color: rgb(255, 0, 0);
+            height: 35vh;
+            width: 55vw;
+            transform: translate(0, -40vh);
+        }
+    }
+
+    #r_square{
+        position: absolute;
+        height: 105vh;
+        width: 35vh;
+        right: -9vw;
+        background-color: rgb(255, 0, 0);
+        z-index: -1;
+        transition: .5s;
+
+        &.move1{
+            height: 60vh;
+            width: 90vh;
+            transform: translate(26vw, 0vw);
+        }
+        
+        &.move2{
+            height: 93vh;
+            width: 90vh;
+            transform: translate(26vw, 0vw);
+            background-color: black;
+        }
+        &.move-2{
+            height: 60vh;
+            width: 90vh;
+            transform: translate(26vw, 0vw);
+        }
+        
+        &.move-1{
+            height: 93vh;
+            width: 90vh;
+            transform: translate(26vw, 0vw);
+            background-color: black;
+        }
+    }
+}
+
+main#s_all{
+    display: flex;
+    flex-direction: row;
+    height: 110vh;
+    // justify-content: center;
+
+    section#s_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 80vw;
+        height: 95vh;
+        margin-top: 10vh;
+
+        #s_arrow{
+            width: 80vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            z-index: 1;
+
+            #btns_left, #btns_right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 8vw;
+                height: 12vh;
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+
+                &:hover{
+                    background-color: rgb(25, 25, 25);
+                }
+            }
+        }
+
+        #m_info{
+            width: 72vw;
+            height: 86vh;
+            color: rgb(255, 255, 255);
+            align-self: flex-end;
+
+            #c_titles{
+                width: 100%;
+                height: 10vh;
+                img{
+                    width: 20vw;
+                    height: 5vh;
+                    margin-bottom: 3vh;
+                }
+            }
+
+            #c_text{
+                margin-bottom: 15vh;
+                p{
+                    font-size: 1.3vw;
+                    color: rgb(0, 0, 0);
+                }
+            }
+
+            #price{
+                margin-bottom: 5vh;
+                height: 5vh;
+                p{
+                    font-size: 2.5vw;
+                }
+            }
+
+            #know{
+                position: relative;
+                z-index: 2;
+                input{
+                    border: none;
+                    text-decoration: none;
+                    background-color: rgb(182, 0, 0);
+                    padding: 1vw;
+                    padding-left: 2.5vw;
+                    padding-right: 2.5vw;
+                    color: rgb(255, 255, 255);
+                    font-size: 1.2vw;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+
+            #c_images{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: -16vh;
+                width: 72vw;
+                height: 66.5vh;
+                img.truck{
+                    width: 60vw;
+                    height: 66.5vh;
+                    margin-left: 12.3vw;
+                }
+                img.car{
+                    margin-top: 10vh;
+                    width: 60vw;
+                    height: 45vh;
+                    margin-left: 12.3vw;
+                }
+            }
+        }
+    }
+    
+    #g_square{
+        position: relative;
+        width: 100%;
+        height: 105vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        #gray{
+            background-color: rgb(228, 228, 228);
+            height: 12vh;
+            width: 100%;
+        }
+    }
+    
+}
