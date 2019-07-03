@@ -40,9 +40,14 @@ main#all{
         position: absolute;
         height: 80vh;
         width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('../../../../images/tablero.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-image: url('../../../../images/tablero.jpg');
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
 
         #shows{
             text-decoration: none;
