@@ -1,15 +1,16 @@
 #carrousel, #truck, #gallery{
-    height: 100vh;
+    height: 84vh;
 }
 
 div#modal{
     overflow: auto;
     display: none;
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
+    top: 0vh;
     background-color:rgb(0,0,0);
     background-color:rgba(0,0,0,0.8);
-    position: fixed;
+    position: absolute;
     z-index: 2;
 
     #close{
@@ -55,45 +56,29 @@ main#all{
         align-items: center;
         position: relative;
         z-index: -1;
-        width: 50vw;
+        width: 44vw;
 
         #sidebar{
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            width: 45vh;
-            height: 99.8vh;
+            width: 40vh;
+            height: 84vh;
             border-top: 0.1vh solid gray; 
             border-bottom: 0.1vh solid gray;
             margin-left: 4vw;
             color: white;
-            //z-index: -1;
 
             #p_title{
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
-                flex-wrap: wrap;
-                width: 19vw;
-                height: 22vh;
+                width: 15vw;
+                height: 20vh;
                 img{
-                    width: 18vw;
+                    width: 15vw;
                 }
-
-                // span{
-                //     flex: 0 1 auto;
-
-                //     &:first-child{
-                //         font-size: 4vw;
-                //     }
-                //     &:last-child{
-                //         font-size: 2.5vw;
-                //     }
-                //     & *{
-                //         display: inline-block;
-                //     }
-                // }
             }
         }
     }
@@ -108,12 +93,12 @@ main#all{
         #image{
             background-color: white;
             margin-top: 15vh; 
-            width: 55vw;
-            height: 60vh;
+            width: 50vw;
+            height: 50vh;
             img{
-                margin-top: 15vh;
+                margin-top: 12vh;
                 width: 100%;
-                height: 80%;
+                height: 82%;
             }
         }
 
@@ -121,8 +106,8 @@ main#all{
             display: flex;
             justify-content: space-around;
             align-self: flex-end;
-            width: 14vw;
-            height: 13vh;
+            width: 10vw;
+            height: 10vh;
             right: 0;
             cursor: pointer;
 
@@ -150,20 +135,20 @@ main#all{
         // -ms-z-index: -1;
 
            #deck{
-            width: 37vw;
+            width: 40vw;
 
             #select{
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
-                height: 20vh;
+                height: 15vh;
                 margin-bottom: 1vh;
                 #out, #in{
                     width: 50%;
                     cursor: pointer;
                     p{
                         padding-left: 2vw;
-                        font-size: 1.2vw;
+                        font-size: 1vw;
                         font-weight: 600;
                         margin-bottom: 2vh;
                     }
@@ -189,11 +174,11 @@ main#all{
                 flex-wrap: wrap;
                 justify-content: space-between;
                 .image{
-                    height: 24.35vh;
+                    height: 21vh;
                     display: flex;
                     .zoom{
                         display: inline-block;
-                        width: 18.5vw;
+                        width: 20vw;
                         height: 100%;
                         position: relative;
                         cursor: zoom-in;
@@ -202,8 +187,8 @@ main#all{
                         position: absolute;
                         width: 1.5vw;
                         height: 2.5vh;
-                        margin-left: 16vw;
-                        margin-top: 20vh;
+                        margin-left: 17vw;
+                        margin-top: 17vh;
                     }
                 }
             }
@@ -214,10 +199,10 @@ main#all{
             }
             
             #square{
-                width: 45vw;
-                height: 49vh;
-                bottom: 6vh;
-                right: 40vw;
+                width: 40vw;
+                height: 50vh;
+                bottom: 4.5vh;
+                right: 45vw;
                 position: absolute;
                 z-index: -1;
             }
