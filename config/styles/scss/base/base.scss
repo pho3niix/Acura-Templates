@@ -30,7 +30,7 @@ header{
         display: flex;
         flex-direction: column;
         position: absolute;
-        width: 0;
+        width: 0vw;//<------cambiar a cero cuando se termine de editar
         height: 92vh;
         right: 0;
         z-index: 3;
@@ -66,7 +66,7 @@ header{
             }
     
             #version{
-                margin-bottom: 3vh; 
+                margin-bottom: 1vh; 
                 #pictures{
                     display: flex;
                     flex-direction: column;
@@ -76,15 +76,15 @@ header{
                         display: flex;
                         flex-direction: row;
                         width: 100%;
-                        height: 15vh;
+                        height: 13vh;
                         align-items: center;
                         justify-content: flex-start;
                         padding-left: 4vw;
                         cursor: pointer;
                         transition: .4s;
                         img{
-                            width: 9vw;
-                            height: 10vh;
+                            width: 8vw;
+                            height: 9vh;
                             margin: 2vw;
                             margin-top: 5.7vh;
                         }
@@ -124,7 +124,7 @@ header{
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: center;
-                    margin-top: 2vh;
+                    margin-top: 0vh;
 
                     .item{
                         padding-bottom: 1.5vh;
@@ -142,7 +142,7 @@ header{
             #m_info{
                 display: flex;
                 flex-direction: row;
-                margin-top: 4vh;
+                margin-top: 1vh;
                 width: 28vw;
 
                 #ficha{
@@ -150,14 +150,14 @@ header{
                 }
                 
                 #tecnica, #ficha{
-                    height: 15vh;
+                    height: 12vh;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     p{
                         margin-left: 1vh;
                         margin-right: 1vh;
-                        font-size: 1.1vw;
+                        font-size: 1vw;
                     }
                 }
                 
@@ -171,11 +171,11 @@ header{
                     align-items: center;
 
                     #pdf{
-                        width: 65%;
+                        width: 60%;
                     }
 
                     #tecni{
-                        width: 85%;
+                        width: 80%;
                     }
                 }
             }
