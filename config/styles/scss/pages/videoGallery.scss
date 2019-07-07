@@ -4,7 +4,7 @@ main#all{
     
     #s_video{
         width: 40vw;
-        height: 95vh;
+        height: 80vh;
         border-bottom: .5px solid gray;
 
         #v_title{
@@ -13,20 +13,8 @@ main#all{
             justify-content: center;
             color: white;
             width: 19vw;
-            height: 18vh;
+            height: 14vh;
             margin-left: 4vw;
-
-            // span{
-            //     &:first-child{
-            //         font-size: 4vw;
-            //     }
-            //     &:last-child{
-            //         font-size: 2.5vw;
-            //     }
-            //     & *{
-            //         display: inline-block;
-            //     }
-            // }
             img{
                 width: 11vw;
             }
@@ -36,7 +24,7 @@ main#all{
             position: relative;
             z-index: 0;
             width: 75vw;
-            height: 77.2vh;
+            height: 66vh;
         }
     }
 
@@ -52,12 +40,12 @@ main#all{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 32vw;
-            height: 40vh;
-            color: white;
+            width: 30vw;
+            height: 32vh;
+            color: rgb(255, 255, 255);
             z-index: 0;
             p:first-child{
-                font-size: 3vw;
+                font-size: 2.5vw;
                 padding-left: 3vw;
                 padding-bottom: 2vh;
             }
@@ -73,15 +61,16 @@ main#all{
             position: relative;
             height: 5vh;
             width: 20vw; 
-            right: 4vw;
+            right: 5vw;
         }
         
         #t_square{
             position: relative;
-            width: 41vw;
-            height: 28vh;
+            width: 42vw;
+            height: 38vh;
             z-index: -1;
-            right: 18vw;
+            right: 21vw;
+            top: 16vh;
         }
     }
 }
