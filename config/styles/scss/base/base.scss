@@ -189,8 +189,12 @@ header{
         #logo{
             width: 11.6vw;
             margin-left: 4.7vw;
+            height: 8vh;
+            display: flex;
+            align-items: center;
             img{
                 width: 100%;
+                filter: invert(100%);
             }
         }
     
@@ -431,7 +435,7 @@ footer{
         cursor: pointer;
 
         p{
-        font-size: .8vw !important;
+        font-size: .7vw;
         letter-spacing: .5vw;
         }
 
