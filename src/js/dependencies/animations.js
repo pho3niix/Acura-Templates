@@ -21,7 +21,7 @@ window.onload = function(){
         }
     }
 
-    var autoplay = setInterval(function(){
+    setInterval(function(){
         play();
     },5000);
 
@@ -30,6 +30,7 @@ window.onload = function(){
 
         r_square.setAttribute("class", "move"+clicks);
         b_square.setAttribute("class", "moves"+clicks);
+        
 
         if(clicks==4){
             r_square.removeAttribute("class", "move");
@@ -43,6 +44,7 @@ window.onload = function(){
 
         r_square.setAttribute("class", "move"+clicks);
         b_square.setAttribute("class", "moves"+clicks);
+        
 
         if(clicks == -4){
             r_square.removeAttribute("class", "move");
