@@ -79,7 +79,7 @@ main#all{
         z-index: 2;
         display: none;
         // justify-content: center;
-        margin-left: 5vw;
+        margin-left: 4vw;
         overflow: hidden;
 
         #e_modal, #e_modal2{
@@ -142,10 +142,12 @@ main#all{
 
     #options{
         background-color: teal;
-        width: 60vw;
-        height: 22vh;
+        width: 40vw;
+        height: 25vh;
         z-index: 3;
         display: flex;
+        position: absolute;
+        right: 0vh;
 
         #link_int, #link_out{
             display: flex;
