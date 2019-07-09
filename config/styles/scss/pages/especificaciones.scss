@@ -35,19 +35,28 @@ main#all{
             background-color: rgb(220, 220, 220);
         }
     }
+
+    section#exterior{
+        display: none;
+        animation-name: zoom;
+        animation-duration: .5s;
+    }
+
+    section#interior{
+        display: block;
+    }
     
-    section#tablet{
+    section#interior, #exterior{
         position: absolute;
         height: 68vh;
         width: 100%;
-        background-color: teal;
         img{
             position: absolute;
             width: 100%;
             height: 100%;
         }
 
-        #shows{
+        #shows, #shows2{
             text-decoration: none;
             border: none;
             width: 5vw;
@@ -62,16 +71,18 @@ main#all{
         }
     }
 
-    #pre_modal{
+    #pre_modal, #pre_modal2{
+        overflow: hidden;
         position: absolute;
         height: 60%;
         width: 80%;
         z-index: 2;
         display: none;
-        justify-content: center;
+        // justify-content: center;
+        margin-left: 5vw;
         overflow: hidden;
 
-        #e_modal{
+        #e_modal, #e_modal2{
             height: 55vh;
             width: 55vw;
             background-color: white;
@@ -81,13 +92,13 @@ main#all{
             align-items: center;
             justify-content: center;
 
-            #e_content{
+            #e_content, #e_content2{
                 display: flex;
                 height: 95%;
                 width: 90%;
                 flex-direction: column;
                 align-items: center;
-                #e_close{
+                #e_close, #e_close2{
                     align-self: flex-end;
                     span{
                         color: rgb(0, 0, 0);
@@ -95,18 +106,19 @@ main#all{
                         cursor: pointer;
                     }
                 }
-                #e_content2{
+                #e_content2, #e_content2_2{
                     height: 88%;
                     width: 100%;
                     display: flex;
+                    flex-direction: row;
                     justify-content: space-between;
 
-                    #e_text, #e_image{
+                    #e_text, #e_text2, #e_image, #e_image2{
                         width: 49%;
                         height: 100%;
                     }
 
-                    #e_text{
+                    #e_text, #e_text2{
                         text-align: justify;
                         color: black;
                         p:first-child{
@@ -117,7 +129,7 @@ main#all{
                             font-size: 1vw;
                         }
                     }
-                    #e_image{
+                    #e_image, #e_image2{
                         img{
                             width: 100%;
                             height: 100%;
@@ -125,6 +137,41 @@ main#all{
                     }
                 }
             }
+        }
+    }
+
+    #options{
+        background-color: teal;
+        width: 60vw;
+        height: 22vh;
+        z-index: 3;
+        display: flex;
+
+        #link_int, #link_out{
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, rgb(0, 0, 0) 80%, rgb(255, 0, 0) 20%);
+            height: 5vh;
+            width: 15vw;
+            cursor: pointer;
+            p{
+                color: rgb(255, 255, 255);
+                font-weight: 600;
+                width: 83%;
+            }
+            i{
+                font-size: 2vw;
+                filter: invert(100%);
+                width: 17%;    
+            }
+        }
+
+        #btn_int, #btn_out{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 50%;
+            height: 100%;
         }
     }
 }
