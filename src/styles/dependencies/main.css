@@ -155,14 +155,14 @@ footer{
   padding-left: 20px;
 }
 .video , .galeria{
-  background: url('../../../../images/cars/bg-video.jpg') no-repeat;
+  background: url('../../images/cars/bg-galeria.jpg') no-repeat;
   background-size: cover;
   width: 100%;
   height: 180px;
   position: relative;
 }
 .video{
-  background: url('../../../../images/cars/bg-galeria.jpg') no-repeat;
+  background: url('../../images/cars/bg-video.jpg') no-repeat;
   background-size: cover;
 }
 .btn-over{
@@ -245,7 +245,7 @@ footer{
 }
 
 .banner-car{
-  background: url('../../../../images/bg.jpg');
+  background: url('../../images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

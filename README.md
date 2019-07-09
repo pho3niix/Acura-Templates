@@ -9,7 +9,7 @@ Templates Agencia de autos Acura.
 `npm run build`
 
 ## Cambios en tiempo real de Sass a Css
-`sass --watch styles/scss/main.scss styles/css/main.css`
+`sass --watch styles/scss/main.scss ../src/styles/main.css --style compressed`
 
 ## Compilar Sass a Css
-`sass styles/scss/main.scss styles/css/main.css`
+`sass styles/scss/main.scss ../src/styles/main.css --style compressed`

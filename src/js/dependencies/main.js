@@ -18,15 +18,15 @@ function changeColor(){
     var cars = document.getElementById("car_360");
 
     blue.addEventListener("click", function(){
-        cars.src = "../images/cars/MDX BLACK.png";
+        cars.src = "images/cars/MDX BLACK.png";
     });
 
     gray.addEventListener("click", function(){
-        cars.src = "../images/cars/mdx-gris.png";
+        cars.src = "images/cars/mdx-gris.png";
     });
 
     white.addEventListener("click", function(){
-        cars.src = "../images/cars/camioneta.png";
+        cars.src = "images/cars/camioneta.png";
     });
 }
 
@@ -39,7 +39,7 @@ function image_360(){
     var image = document.getElementById("car_360");
 
     // Variables de ruta e imagen estatica
-    const ruta = "../images/cars/";//Esta constante representa la ruta donde estan alojadas las imagenes, si se desea cambiar solamente modificar el texto entre comillas
+    const ruta = "images/cars/";//Esta constante representa la ruta donde estan alojadas las imagenes, si se desea cambiar solamente modificar el texto entre comillas
     var i_static = ruta + "camioneta.png";//variable para la imagen estatica
 
     // Variables de imagenes 360

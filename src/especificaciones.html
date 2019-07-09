@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD:views/especificaciones.html
         <script
         src="../config/js/dependencies/jquery-3.4.1.min.js">
         </script>
@@ -11,18 +12,25 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Work+Sans:100,200,400,700,900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="../config/styles/css/main.css">
+=======
+        <script 
+        src="js/dependencies/jquery-3.4.1.min.js">
+        </script>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styles/main.css">
+>>>>>>> 76c9cab9d939080635c4a6958165070477e89c42:src/especificaciones.html
         <!-- Image Icon -->
-        <link rel="icon" href="../images/icon.png">
+        <link rel="icon" href="images/icon.png">
         <!-- Normalize -->
-        <link rel="stylesheet" href="../config/styles/css/dependencies/normalize.css">
+        <link rel="stylesheet" href="styles/dependencies/normalize.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/18516ef2f3.js"></script>
         <!-- modal -->
-        <script src="../config/js/events/tec_modal.js"></script>
+        <script src="js/dependencies/tec_modal.js"></script>
         <!-- Main Js bundle -->
-        <script src="../config/js/mainBundle.js"></script>
+        <script src="js/mainBundle.js"></script>
         <!-- Carousel -->
-        <script src="../config/js/dependencies/slidepage.min.js"></script>
+        <script src="js/dependencies/slidepage.min.js"></script>
         <!-- Title -->
         <title>Especificaciones</title>
 </head>
@@ -31,7 +39,7 @@
         <div id="slide_m" class="black">
             <div id="t_menu">
                 <div class="black menu" href="#">
-                        <img src="../images/menu.svg" alt="Menu">
+                        <img src="images/menu.svg" alt="Menu">
                         <p>OTRAS VERSIONES</p>
                 </div>
                 <div id="m_close">
@@ -45,14 +53,14 @@
                     </div>
                     <div id="pictures">
                         <div class="s_content">
-                            <img src="../images/cars/camioneta.png" alt="">
+                            <img src="images/cars/camioneta.png" alt="">
                             <div id="text">
                                 <span>TECH</span>
                                 <span>$929.900</span>
                             </div>
                         </div>
                         <div class="s_content">
-                            <img src="../images/cars/camioneta.png" alt="">
+                            <img src="images/cars/camioneta.png" alt="">
                             <div id="text">
                                 <span>A-SPEC</span>
                                 <span>$929.900</span>
@@ -86,7 +94,7 @@
                         <section id="m_info">
                                 <div id="ficha">
                                 <div class="enlace">
-                                    <img src="../images/pdf.PNG" alt="" id="pdf">
+                                    <img src="images/pdf.PNG" alt="" id="pdf">
                                 </div>
                                 <div class="txt">
                                     <p>
@@ -97,11 +105,11 @@
                             </div>
                             <div id="tecnica">
                                 <div class="enlace">
-                                    <img id="tecni" src="../images/tecni.PNG" alt="">
+                                    <img id="tecni" src="images/tecni.PNG" alt="">
                                 </div>
                                 <div class="txt">
                                     <p>
-                                        ESPECIFICACIONES <br>
+                                        ESPECIFICACIONES
                                         TECNICAS
                                     </p>
                                 </div>
@@ -113,11 +121,11 @@
         </div>
         <nav id="nav">
             <div id="logo">
-                <a href="index.html"><img class="logotipo" src="../images/acura-vector-logo.svg" alt="Acura" srcset="../images/acura-vector-logo.svg"></a>
+                <a href="index.html"><img class="logotipo" src="images/acura-vector-logo.svg" alt="Acura" srcset="images/acura-vector-logo.svg"></a>
             </div>
 
             <div class="red menu">
-                <img src="../images/menu.svg" alt="Menu">
+                <img src="images/menu.svg" alt="Menu">
                 <p>OTRAS VERSIONES</p>
             </div>
         </nav>
@@ -141,7 +149,7 @@
         </section>
         <section id="tecnics">
             <div id="bar_t">
-                <img src="../images/logos_name/MDX.PNG" alt="ACURA">
+                <img src="images/logos_name/MDX.PNG" alt="ACURA">
                 <p>Especificaciones Tecnicas</p>
             </div>
         </section>
@@ -150,10 +158,24 @@
 
             </div>
         </section>
-        <section id="tablet">
-            <img src="../images/tablero2.jpg" alt="">
+        <section id="interior">
+            <img src="images/tablero2.jpg" alt="">
             <input type="button" value="+" id="shows">
         </section>
+        <div id="options">
+            <div id="btn_int" style="background-image: url('images/cars/bg-galeria.jpg'); background-size: cover; background-repeat: no-repeat;">
+                <div id="link_int">
+                    <p>INTERIOR</p>
+                    <i class="far fa-play-circle"></i>
+                </div>
+            </div>
+            <div id="btn_out" style="background-image: url('images/cars/slider1.png'); background-size: cover; background-repeat: no-repeat;">
+                <div id="link_out">
+                    <p>EXTERIOR</p>
+                    <i class="far fa-play-circle"></i>
+                </div>
+            </div>
+        </div>
         <div id="pre_modal">
             <div id="e_modal">
                 <div id="e_content">
@@ -171,7 +193,34 @@
                             </p>
                         </div>
                         <div id="e_image">
-                            <img src="../images/inside/02 MDX ASPECTOS-13.jpg" alt="">
+                            <img src="images/inside/02 MDX ASPECTOS-13.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="exterior">
+            <img src="images/cars/slider1.png" alt="">
+            <input type="button" value="+" id="shows2">
+        </section>
+        <div id="pre_modal2">
+            <div id="e_modal2">
+                <div id="e_content2">
+                    <div id="e_close2">
+                        <span>X</span>
+                    </div>
+                    <div id="e_content2_2">
+                        <div id="e_text2">
+                            <p>Mantente Informado</p>
+                            <p>
+                                In eget magna in enim dapibus efficitur. Nam maximus faucibus tellus, eget sollicitudin dui hendrerit eu. Aliquam auctor porttitor dolor a laoreet. Curabitur malesuada ante leo, ac pretium turpis dignissim vel.
+                                <br><br>
+                                Nulla facilisi. Phasellus maximus eget ex ut porta. Nunc interdum orci ante, convallis fringilla nisi rhoncus efficitur. Pellentesque quis libero nec metus volutpat pellentesque. Nam eu efficitur odio, nec ornare augue. Cras arcu arcu, ultrices in rutrum at, euismod eu mauris.
+                                Nulla facilisi. Phasellus maximus eget ex ut porta. Nunc interdum orci ante, convallis fringilla nisi rhoncus efficitur. Pellentesque quis libero nec metus volutpat pellentesque.
+                            </p>
+                        </div>
+                        <div id="e_image2">
+                            <img src="images/inside/02 MDX ASPECTOS-13.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -187,27 +236,27 @@
                 </div>
                 <div id="ft_content">
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                 </div>
