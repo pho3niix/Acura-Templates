@@ -33,9 +33,24 @@
     <main id="idx">
         <section id="bgd">
             <div class="app">
-                <img src="images/cars/slider1.png" alt="Truck">
+                <img class="sp_page" src="images/cars/slider1.png" alt="Truck">
+                <img class="sp_page" src="images/cars/bg-galeria.jpg" alt="Truck">
+                <img class="sp_page" src="images/cars/camioneta2.png" alt="Truck">
             </div>
+            <span id="play"></span>
         </section>
+        <script>
+            var sp = new SLIDEPAGE({
+                    el: ".app",
+                    repeat: true,
+                    realNumber: true,
+                    direction: "x"
+                });
+
+                setInterval(function(){
+                    sp.next();
+                }, 5000)
+        </script>
         <section id="squares">
             <div id="s-red">
 
