@@ -123,7 +123,7 @@ header, footer{
   background: #000;
 }
 footer{
-  padding: 10px 0;
+  padding: 0px 0;
 }
 .no-gutters{
   padding: 0 !important;
@@ -136,7 +136,7 @@ footer{
 .menu a{
   background: #D0021B;
   color: white;
-  padding: 30px 20px;
+  padding: 40px 20px;
   position: absolute;
   top: 0;
   right: 0;
@@ -249,7 +249,7 @@ footer{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 536px;
   padding: 90px 0;
 }
 .car{
@@ -257,7 +257,7 @@ footer{
   width: 60%;
   float: right;
   position:relative;
-  top:30px;
+  top: 0px;
 }
 .features{
   padding: 40px 40px ;
@@ -351,7 +351,8 @@ footer div h5{
 }
 
 #car_360{
-  width: 95%;
+  width: 85%;
+  margin-top: 0vh;
 }
 
 #rangeContent{
@@ -369,6 +370,8 @@ footer div h5{
   opacity: 0.7;
   transition: opacity .2s;
   border-radius: 10px;
+  margin: 3.7vh;
+  padding: 0;
 }
 
 #p_360{
@@ -630,221 +633,150 @@ header {
     height: 13.5vh;
     min-width: 16vw;
     color: white; }
+
     header .menu img {
       width: 2.5vw; }
+      
     header .menu p {
       font-size: .9vw; }
 
-    #slide_m {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: black;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    position: absolute;
-    width: 0vw;
-    right: 0;
-    z-index: 3;
-    overflow: hidden;
-    color: white;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-
-    #slide_m #t_menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse; }
-
-    #slide_m #t_menu #m_close {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: white;
-    height: 13vh;
-    width: 2vw;
-    margin-left: 1vw;
-    font-size: 2vw;
-    cursor: pointer; }
-
-    #slide_m #menu_content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-
-    #slide_m #menu_content .title {
-    margin-bottom: 1vh;
-    margin-left: 4vw; }
-
-    #slide_m #menu_content #version {
-    margin-bottom: 3vh; }
-
-    #slide_m #menu_content #version #pictures {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start; }
-
-    #slide_m #menu_content #version #pictures .s_content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    width: 100%;
-    height: 15vh;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    padding-left: 4vw;
-    cursor: pointer;
-    -webkit-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s; }
-
-    #slide_m #menu_content #version #pictures .s_content img {
-    width: 9vw;
-    height: 10vh;
-    margin: 2vw;
-    margin-top: 5.7vh; }
-
-    #slide_m #menu_content #version #pictures .s_content:hover {
-    background-color: #424242; }
-
-    #slide_m #menu_content #version #pictures #text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-width: 15%; }
-
-    #slide_m #menu_content #version #pictures #text span:first-child {
-    padding-bottom: 1vh;
-    padding-left: 1vh;
-    width: 15vw;
-    border-bottom: 1px solid gray;
-    font-weight: bold; }
-
-    #slide_m #menu_content #version #pictures #text span:last-child {
-    padding-top: 1vh;
-    padding-left: 1vh;
-    font-weight: normal; }
-
-    #slide_m #menu_content #description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 480px; }
-
-    #slide_m #menu_content #description #diferences {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 2vh; }
-
-    #slide_m #menu_content #description #diferences .item {
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-    width: 28vw;
-    border-bottom: 1px solid gray; }
-
-    #slide_m #menu_content #description #diferences .item p {
-    font-size: 2.5vh; }
-
-    #slide_m #menu_content #m_info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-top: 4vh;
-    width: 28vw; }
-
-    #slide_m #menu_content #m_info #ficha {
-    width: 16vw; }
-
-    #slide_m #menu_content #m_info #tecnica,   #slide_m #menu_content #m_info #ficha {
-  height: 15vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-    #slide_m #menu_content #m_info #tecnica p,   #slide_m #menu_content #m_info #ficha p {
-    margin-left: 1vh;
-    margin-right: 1vh;
-    font-size: 1.1vw; }
-
-    #slide_m #menu_content #m_info .enlace {
-      border: .6vh solid white;
-      width: 4vw;
-      height: 8vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer; }
-
-      #slide_m #menu_content #m_info .enlace #pdf{
-        width: 65%;
+      header #slide_m {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 0vw;
+        height: 100vh;
+        right: 0;
+        z-index: 3;
+        overflow: hidden;
+        color: white;
+        transition: 0.5s;
+        background-color: rgb(0, 0, 0);
       }
-
-      #slide_m #menu_content #m_info .enlace #tecni{
-        width: 85%;
+      header #slide_m #t_menu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+      }
+      header #slide_m #t_menu #m_close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 13vh;
+        width: 2vw;
+        margin-left: 1vw;
+        font-size: 2vw;
+        cursor: pointer;
+      }
+      header #slide_m #menu_content {
+        display: flex;
+        flex-direction: column;
+      }
+      header #slide_m #menu_content .title {
+        margin-bottom: 1vh;
+        margin-left: 4vw;
+      }
+      header #slide_m #menu_content #version {
+        margin-bottom: 0vh;
+      }
+      header #slide_m #menu_content #version #pictures {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      header #slide_m #menu_content #version #pictures .s_content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 13vh;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 4vw;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      header #slide_m #menu_content #version #pictures .s_content img {
+        width: 8vw;
+        height: 9vh;
+        margin: 2vw;
+        margin-top: 5.7vh;
+      }
+      header #slide_m #menu_content #version #pictures .s_content:hover {
+        background-color: #424242;
+      }
+      header #slide_m #menu_content #version #pictures #text {
+        display: flex;
+        flex-direction: column;
+        max-width: 15%;
+      }
+      header #slide_m #menu_content #version #pictures #text span:first-child {
+        padding-bottom: 1vh;
+        padding-left: 1vh;
+        width: 15vw;
+        border-bottom: 1px solid gray;
+        font-weight: bold;
+      }
+      header #slide_m #menu_content #version #pictures #text span:last-child {
+        padding-top: 1vh;
+        padding-left: 1vh;
+        font-weight: normal;
+      }
+      header #slide_m #menu_content #description {
+        display: flex;
+        flex-direction: column;
+        min-width: 480px;
+      }
+      header #slide_m #menu_content #description #diferences {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 0vh;
+      }
+      header #slide_m #menu_content #description #diferences .item {
+        padding-bottom: .5vh;
+        padding-top: .5vh;
+        width: 28vw;
+        border-bottom: 1px solid gray;
+      }
+      header #slide_m #menu_content #description #diferences .item p {
+        font-size: 2vh;
+      }
+      header #slide_m #menu_content #m_info {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1vh;
+        width: 28vw;
+      }
+      header #slide_m #menu_content #m_info #ficha {
+        width: 16vw;
+      }
+      header #slide_m #menu_content #m_info #tecnica, header #slide_m #menu_content #m_info #ficha {
+        height: 12vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      header #slide_m #menu_content #m_info #tecnica p, header #slide_m #menu_content #m_info #ficha p {
+        margin-left: 1vh;
+        margin-right: 1vh;
+        font-size: 1vw;
+      }
+      header #slide_m #menu_content #m_info .enlace {
+        border: 0.6vh solid white;
+        width: 2.5vw;
+        height: 5vh;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header #slide_m #menu_content #m_info .enlace #pdf {
+        width: 60%;
+      }
+      header #slide_m #menu_content #m_info .enlace #tecni {
+        width: 80%;
       }
 
     #nav {
