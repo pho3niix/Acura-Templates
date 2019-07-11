@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Work+Sans:100,200,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Image Icon -->
+    <link rel="icon" href="images/icon.png">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="styles/dependencies/normalize.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/18516ef2f3.js"></script>
+    <!-- Main Js bundle -->
+    <script src="js/mainBundle.js"></script>
+    <!-- Funciones JS -->
+    <script src="js/dependencies/main.js"></script>
+    <!-- Carousel -->
+    <script src="js/dependencies/slidepage.min.js"></script>
+    <!-- Title -->
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <header class="black">
+        <div id="slide_m" class="black">
+            <div id="t_menu">
+                <div class="black menu" href="#">
+                        <img src="images/menu.svg" alt="Menu">
+                        <p>OTRAS VERSIONES</p>
+                </div>
+                <div id="m_close">
+                    <span><i class="fas fa-times"></i></span>
+                </div>
+            </div>
+            <div id="menu_content">
+                <section id="version">
+                    <div class="title">
+                        <h4>VERSIONES</h4>
+                    </div>
+                    <div id="pictures">
+                        <div class="s_content">
+                            <img src="images/cars/camioneta.png" alt="">
+                            <div id="text">
+                                <span>TECH</span>
+                                <span>$929.900</span>
+                            </div>
+                        </div>
+                        <div class="s_content">
+                            <img src="images/cars/camioneta.png" alt="">
+                            <div id="text">
+                                <span>A-SPEC</span>
+                                <span>$929.900</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="description">
+                    <div class="title">
+                        <h4>COMPARATIVA DE VERSIONES</h4>
+                    </div>
+                    <div id="diferences">
+                        <div class="item">
+                            <p>Rines 19''</p>
+                        </div>
+                        <div class="item">
+                            <p>Manija de Puertas Cromadas</p>
+                        </div>
+                        <div class="item">
+                            <p>Faros de Niebla de LED</p>
+                        </div>
+                        <div class="item">
+                            <p>Consola Central en Madra</p>
+                        </div>
+                        <div class="item">
+                            <p>Limpia Faros</p>
+                        </div>
+                        <div class="item">
+                            <p>Luz Interior ambiental Roja</p>
+                        </div>
+                        <section id="m_info">
+                             <div id="ficha">
+                                <div class="enlace">
+                                    <img src="images/pdf.PNG" alt="" id="pdf">
+                                </div>
+                                <div class="txt">
+                                    <p>
+                                        VER <br>
+                                        FICHA TECNICA
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="tecnica">
+                                <div class="enlace">
+                                    <img id="tecni" src="images/tecni.PNG" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>
+                                        ESPECIFICACIONES <br>
+                                        TECNICAS
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <nav id="nav">
+            <div id="logo">
+                <a href="index.html"><img class="logotipo" src="images/logo2.png" alt="Acura" srcset="images/logo2.png"></a>
+            </div>
+
+            <div class="red menu" href="#">
+                <img src="images/menu.svg" alt="Menu">
+                <p>OTRAS VERSIONES</p>
+            </div>
+        </nav>
+    </header>
+    <main id="adt">
+        <section id="modal">
+            <div id="modalContent">
+                <div id="close">
+                <span id="x_close"><i class="fas fa-times"></i></span>
+                </div>
+                <div id="log">
+                <img src="images/acura-logo.svg" alt="acura">
+                </div>
+                <div id="text">
+                <p>Gracias por interesarte en nuestros autos, escribe tu correo electronico y enseguida te enviaremos la ficha tecnica del modelo que seleccionaste</p>
+                </div>
+                <form id="forms" action="">
+                <div id="send">
+                    <input type="email">
+                    <input type="submit" value="ENVIAR">
+                </div>
+                <div id="terms">
+                    <input id="check" type="checkbox">
+                    <label for="check">Estoy de Acuerdo con los terminos y condiciones</label>
+                </div>
+                </form>
+            </div>
+            </section>
+            <section id="modal2">
+            <div id="formContent">
+                <div id="closeF">
+                <span id="ft_close"><i class="fas fa-times"></i></span>
+                </div>
+                <div id="logo">
+                <img src="images/acura-logo.svg" alt="acura">
+                </div>
+                <form id="formulario" action="">
+                <div id="sends">
+                    <input name="name" id="name" type="text" placeholder="Nombre Completo">
+                    <input name="phone" id="phone" type="number" placeholder="Telefono">
+                    <input name="email" id="email" type="email" placeholder="Correo Electronico">
+                    <input type="submit" value="ENVIAR">
+                </div>
+                </form>
+            </div>
+            </section>
+            <section id="m_ficha">
+                <div id="f_content">
+                    <div id="fa_close">
+                        <span id="fs_close">X</span>
+                    </div>
+                    <h2>Ficha Tecnica
+                    </h2>
+                </div>
+            </section>
+            <section id="m_tecni">
+                <div id="t_content">
+                    <div id="te_close">
+                        <span id="ti_close">X</span>
+                    </div>
+                    <h2>Especificaciones Tecnicas</h2>
+                </div>
+            </section>
+        <section id="fn-360" style="background-image: url('images/bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+            <div id="banner-car">
+                <div id="features">
+                    <div id="f-cont">
+                        <div class="modelo">
+                            <h2>MDX2019</h2>
+                        </div>
+                        <div class="color">
+                            <p>Blanco Diamante</p>
+                        </div>
+                        <div class="specs">
+                            <div class="w-25 d-inline-block mr-1">
+                                <h3>109</h3>
+                                <p>ACELERACIÓN</p>
+                            </div>
+                            <div class="w-25 d-inline-block mr-1">
+                                <h3>280 KM</h3>
+                                <p>VELOCIDAD</p>
+                            </div>
+                            <div class="w-25 d-inline-block">
+                                <h3>17K/LT</h3>
+                                <p>CONSUMO</p>
+                            </div>
+                        </div>
+                        <div class="btns-features">
+                            <div class="cta"> <span><i class="far fa-envelope"></i></span>ENVIAR BROCHURE</div>
+                            <div class="cta">COTIZAR</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart">
+                    <span id="close_r"><i class="fas fa-times"></i></span>
+                    <img id="car_360" src="images/cars/camioneta.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="colors">
+            <section id="c-options">
+                <div id="c-int">
+                    <h3>COLOR INTERIOR</h3>
+                    <a href="#"><span class="circle red"></span></a>
+                </div>
+                <div id="c-out">
+                    <h3>COLOR EXTERIOR</h3>
+                    <a id="blue-btn" style="cursor: pointer;"><span class="circle blue"></span></a>
+                    <a><span class="circle red"></span></a>
+                    <a id="white-btn"style="cursor: pointer;"><span class="circle silver"></span></a>
+                    <a><span class="circle black"></span></a>
+                    <a id="gray-btn" style="cursor: pointer;"><span class="circle gray"></span></a>
+                </div>
+            </section>
+            <section id="bg-vf">
+                <div id="fn-360">
+                    <img id="p_360" src="images/360.svg" alt="">
+                    <div id="rangeContent">
+                        <input id="range" type="range" min="1" max="24" value="1">
+                    </div>
+                </div>
+                <div id="galleries">
+                    <div id="photo" style="background-image: url('images/cars/bg-galeria.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                        <div id="link-gal">
+                            <p>GALERIA DE FOTOS</p>
+                            <i class="far fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div id="vid" style="background-image: url('images/cars/bg-video.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                        <a href="videoGallery.html">
+                            <div id="link-vid">
+                                <p>PLAY</p>
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- desde aqui footer menu -->
+        <div id="footerMenu">
+            <div id="f_close">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div id="f_menu">
+                <div id="title">
+                    <p>ELEGIR OTRO ACURA</p>
+                </div>
+                <div id="ft_content">
+                    <div class="car">
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                    <div class="car">
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
+                        <p>ILX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="r_footer" class="black">
+        <div  id="choose">
+            <i class="fas fa-home"></i>
+            <p>ELEGIR OTRO ACURA</p>
+        </div>
+    </footer>
+</body>
+</html>

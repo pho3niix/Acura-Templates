@@ -348,6 +348,7 @@ footer div h5{
   cursor: pointer;
   position: absolute;
   right: 3vw;
+  top: 10vh;
 }
 
 #car_360{

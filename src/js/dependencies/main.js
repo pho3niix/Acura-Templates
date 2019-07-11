@@ -194,6 +194,8 @@ function brochure(){
     send[0].addEventListener("click", function(){
         modal.style.display = "flex";
     });
+    console.log("Estoy funcionando");
+    
 }
 
 // Modal cotizar
