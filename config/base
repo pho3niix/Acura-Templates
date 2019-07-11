@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Stylesheet -->
-        <link rel="stylesheet" href="../config/styles/css/main.css">
-        <!-- Image Icon -->
-        <link rel="icon" href="../images/icon.png">
-        <!-- Normalize -->
-        <link rel="stylesheet" href="../config/styles/css/dependencies/normalize.css">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/18516ef2f3.js"></script>
-        <!-- Main Js bundle -->
-        <script src="../config/js/mainBundle.js"></script>
-        <!-- Carousel -->
-        <script src="../config/js/dependencies/slidepage.min.js"></script>
-        <!-- Title -->
-        <title>Especificaciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Work+Sans:100,200,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Image Icon -->
+    <link rel="icon" href="images/icon.png">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="styles/dependencies/normalize.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/18516ef2f3.js"></script>
+    <!-- Main Js bundle -->
+    <script src="js/mainBundle.js"></script>
+    <!-- Carousel -->
+    <script src="js/dependencies/slidepage.min.js"></script>
+    <!-- Title -->
+    <title>Photo Gallery</title>
 </head>
 <body>
     <header class="black">
         <div id="slide_m" class="black">
             <div id="t_menu">
                 <div class="black menu" href="#">
-                        <img src="../images/menu.svg" alt="Menu">
+                        <img src="images/menu.svg" alt="Menu">
                         <p>OTRAS VERSIONES</p>
                 </div>
                 <div id="m_close">
-                    <span>X</span>
+                    <span><i class="fas fa-times"></i></span>
                 </div>
             </div>
             <div id="menu_content">
@@ -38,14 +41,14 @@
                     </div>
                     <div id="pictures">
                         <div class="s_content">
-                            <img src="../images/cars/camioneta.png" alt="">
+                            <img src="images/cars/camioneta.png" alt="">
                             <div id="text">
                                 <span>TECH</span>
                                 <span>$929.900</span>
                             </div>
                         </div>
                         <div class="s_content">
-                            <img src="../images/cars/camioneta.png" alt="">
+                            <img src="images/cars/camioneta.png" alt="">
                             <div id="text">
                                 <span>A-SPEC</span>
                                 <span>$929.900</span>
@@ -77,9 +80,9 @@
                             <p>Luz Interior ambiental Roja</p>
                         </div>
                         <section id="m_info">
-                                <div id="ficha">
+                             <div id="ficha">
                                 <div class="enlace">
-                                    <img src="../images/pdf.PNG" alt="" id="pdf">
+                                    <img src="images/pdf.PNG" alt="" id="pdf">
                                 </div>
                                 <div class="txt">
                                     <p>
@@ -90,7 +93,7 @@
                             </div>
                             <div id="tecnica">
                                 <div class="enlace">
-                                    <img id="tecni" src="../images/tecni.PNG" alt="">
+                                    <img id="tecni" src="images/tecni.PNG" alt="">
                                 </div>
                                 <div class="txt">
                                     <p>
@@ -106,16 +109,34 @@
         </div>
         <nav id="nav">
             <div id="logo">
-                <a href="index.html"><img class="logotipo" src="../images/acura-vector-logo.svg" alt="Acura" srcset="../images/acura-vector-logo.svg"></a>
+                <a href="index.html"><img class="logotipo" src="images/logo2.png" alt="Acura" srcset="images/logo2.png"></a>
             </div>
-            
+
             <div class="red menu" href="#">
-                <img src="../images/menu.svg" alt="Menu">
+                <img src="images/menu.svg" alt="Menu">
                 <p>OTRAS VERSIONES</p>
             </div>
         </nav>
     </header>
     <main id="all">
+        <section id="m_ficha">
+            <div id="f_content">
+                <div id="fa_close">
+                    <span id="fs_close"><i class="fas fa-times"></i></span>
+                </div>
+                <h2>Ficha Tecnica</h2>
+            </div>
+        </section>
+        <section id="m_tecni">
+            <div id="t_content">
+                <div id="te_close">
+                    <span id="ti_close"><i class="fas fa-times"></i></span>
+                </div>
+                <h2>Especificaciones Tecnicas</h2>
+            </div>
+        </section>
+
+        <!-- desde aqui footer menu -->
         <div id="footerMenu">
             <div id="f_close">
                 <i class="fa fa-chevron-down"></i>
@@ -126,27 +147,27 @@
                 </div>
                 <div id="ft_content">
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                     <div class="car">
-                        <a href="#"><img src="../images/cars/camioneta.png" alt=""></a>
+                        <a href="#"><img src="images/cars/camioneta.png" alt=""></a>
                         <p>ILX</p>
                     </div>
                 </div>
