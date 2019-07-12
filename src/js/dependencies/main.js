@@ -56,30 +56,30 @@ function image_360(){
     NOTA: la constante "ruta" no se modifica ya que esta definida en la parte superior
     */
 
-    var _1 = ruta + "02 mdx exterior 01.png";
-    var _2 = ruta + "02 mdx exterior 02.png";
-    var _3 = ruta + "02 mdx exterior 03.png";
-    var _4 = ruta + "02 mdx exterior 04.png";
-    var _5 = ruta + "02 mdx exterior 05.png";
-    var _6 = ruta + "02 mdx exterior 06.png";
-    var _7 = ruta + "02 mdx exterior 07.png";
-    var _8 = ruta + "02 mdx exterior 08.png";
-    var _9 = ruta + "02 mdx exterior 09.png";
-    var _10 = ruta + "02 mdx exterior 10.png";
-    var _11 = ruta + "02 mdx exterior 11.png";
-    var _12 = ruta + "02 mdx exterior 12.png";
-    var _13 = ruta + "02 mdx exterior 13.png";
-    var _14 = ruta + "02 mdx exterior 14.png";
-    var _15 = ruta + "02 mdx exterior 15.png";
-    var _16 = ruta + "02 mdx exterior 16.png";
-    var _17 = ruta + "02 mdx exterior 17.png";
-    var _18 = ruta + "02 mdx exterior 18.png";
-    var _19 = ruta + "02 mdx exterior 19.png";
-    var _20 = ruta + "02 mdx exterior 20.png";
-    var _21 = ruta + "02 mdx exterior 21.png";
-    var _22 = ruta + "02 mdx exterior 22.png";
-    var _23 = ruta + "02 mdx exterior 23.png";
-    var _24 = ruta + "02 mdx exterior 24.png";
+    var _1 = ruta + "mdx-ext-01.png";
+    var _2 = ruta + "mdx-ext-02.png";
+    var _3 = ruta + "mdx-ext-03.png";
+    var _4 = ruta + "mdx-ext-04.png";
+    var _5 = ruta + "mdx-ext-05.png";
+    var _6 = ruta + "mdx-ext-06.png";
+    var _7 = ruta + "mdx-ext-07.png";
+    var _8 = ruta + "mdx-ext-08.png";
+    var _9 = ruta + "mdx-ext-09.png";
+    var _10 = ruta + "mdx-ext-10.png";
+    var _11 = ruta + "mdx-ext-11.png";
+    var _12 = ruta + "mdx-ext-12.png";
+    var _13 = ruta + "mdx-ext-13.png";
+    var _14 = ruta + "mdx-ext-14.png";
+    var _15 = ruta + "mdx-ext-15.png";
+    var _16 = ruta + "mdx-ext-16.png";
+    var _17 = ruta + "mdx-ext-17.png";
+    var _18 = ruta + "mdx-ext-18.png";
+    var _19 = ruta + "mdx-ext-19.png";
+    var _20 = ruta + "mdx-ext-20.png";
+    var _21 = ruta + "mdx-ext-21.png";
+    var _22 = ruta + "mdx-ext-22.png";
+    var _23 = ruta + "mdx-ext-23.png";
+    var _24 = ruta + "mdx-ext-24.png";
 
     // Condicion para cambiar imagenes del 360
     range.addEventListener("input", function(){
@@ -195,7 +195,7 @@ function brochure(){
         modal.style.display = "flex";
     });
     console.log("Estoy funcionando");
-    
+
 }
 
 // Modal cotizar
@@ -278,6 +278,6 @@ function tecni_modal(){
     var btn = document.getElementsByClassName("enlace");
 
     btn[1].addEventListener("click", function(){
-        tmodal.style.display = "flex";
+        window.open("especificaciones.html"); 
     });
 }
