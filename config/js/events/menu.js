@@ -68,6 +68,6 @@ function tecni_modal(){
     var btn = document.getElementsByClassName("enlace");
 
     btn[1].addEventListener("click", function(){
-        tmodal.style.display = "flex";
+       window.location.href = "especificaciones.html";
     });
 }
