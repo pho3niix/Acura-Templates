@@ -164,10 +164,18 @@ function image_360(){
 
     // Habilitar funcion 360
     btn_360.addEventListener("click", function(){
+        var gif = "images/loading3.gif";
+        var loaders = [_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24];
+        var images = [];
+        
         btn_360.style.display = "none";
         range.style.display = "block";
         close.style.display = "block";
-        image.src = _1;
+        
+        for(var e=0; e<loaders.length; e++){
+            images[e] = new Image();
+            images[e].src = loaders[e];
+        }
     });
 
     // Deshabilitar funcion 360
@@ -278,6 +286,6 @@ function tecni_modal(){
     var btn = document.getElementsByClassName("enlace");
 
     btn[1].addEventListener("click", function(){
-        window.open("especificaciones.html"); 
+        window.location.href = "especificaciones.html";
     });
 }
