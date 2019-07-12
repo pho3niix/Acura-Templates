@@ -9,6 +9,7 @@ window.onload = function(){
     ficha_modal();
     tecni_modal();
     changeColor();
+    loader(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24);
 }
 
 function changeColor(){
@@ -30,6 +31,57 @@ function changeColor(){
     });
 }
 
+// Variables de ruta e imagen estatica
+const ruta = "images/cars/";//Esta constante representa la ruta donde estan alojadas las imagenes, si se desea cambiar solamente modificar el texto entre comillas
+var i_static = ruta + "camioneta.png";//variable para la imagen estatica
+
+// Variables de imagenes 360
+// Para modificar las imagenes solamente cambiar el nombre de a continuacion
+
+/* EJEMPLO:
+Para cambiar la primera imagen
+la variable es "_1", de ahi solamente cambiar el texto en color verde
+
+var _1 = ruta + "02 mdx exterior 01.png";//<-este es el original
+
+var _1 = ruta + "02 mdx exterior 22.png";//<-este es despues de la modificacion
+
+NOTA: la constante "ruta" no se modifica ya que esta definida en la parte superior
+*/
+
+var _1 = ruta + "mdx-ext-01.png";
+var _2 = ruta + "mdx-ext-02.png";
+var _3 = ruta + "mdx-ext-03.png";
+var _4 = ruta + "mdx-ext-04.png";
+var _5 = ruta + "mdx-ext-05.png";
+var _6 = ruta + "mdx-ext-06.png";
+var _7 = ruta + "mdx-ext-07.png";
+var _8 = ruta + "mdx-ext-08.png";
+var _9 = ruta + "mdx-ext-09.png";
+var _10 = ruta + "mdx-ext-10.png";
+var _11 = ruta + "mdx-ext-11.png";
+var _12 = ruta + "mdx-ext-12.png";
+var _13 = ruta + "mdx-ext-13.png";
+var _14 = ruta + "mdx-ext-14.png";
+var _15 = ruta + "mdx-ext-15.png";
+var _16 = ruta + "mdx-ext-16.png";
+var _17 = ruta + "mdx-ext-17.png";
+var _18 = ruta + "mdx-ext-18.png";
+var _19 = ruta + "mdx-ext-19.png";
+var _20 = ruta + "mdx-ext-20.png";
+var _21 = ruta + "mdx-ext-21.png";
+var _22 = ruta + "mdx-ext-22.png";
+var _23 = ruta + "mdx-ext-23.png";
+var _24 = ruta + "mdx-ext-24.png";
+var images = [];
+
+function loader(){
+    for(var i=0; i<arguments.length; i++){
+        images[i] = new Image();
+        images[i].src = loader.arguments[i];
+    }
+}
+
 // Funcion 360 para imagen detalle auto
 
 function image_360(){
@@ -37,49 +89,6 @@ function image_360(){
     var range = document.getElementById("range");
     var close = document.getElementById("close_r");
     var image = document.getElementById("car_360");
-
-    // Variables de ruta e imagen estatica
-    const ruta = "images/cars/";//Esta constante representa la ruta donde estan alojadas las imagenes, si se desea cambiar solamente modificar el texto entre comillas
-    var i_static = ruta + "camioneta.png";//variable para la imagen estatica
-
-    // Variables de imagenes 360
-    // Para modificar las imagenes solamente cambiar el nombre de a continuacion
-
-    /* EJEMPLO:
-    Para cambiar la primera imagen
-    la variable es "_1", de ahi solamente cambiar el texto en color verde
-
-    var _1 = ruta + "02 mdx exterior 01.png";//<-este es el original
-
-    var _1 = ruta + "02 mdx exterior 22.png";//<-este es despues de la modificacion
-
-    NOTA: la constante "ruta" no se modifica ya que esta definida en la parte superior
-    */
-
-    var _1 = ruta + "mdx-ext-01.png";
-    var _2 = ruta + "mdx-ext-02.png";
-    var _3 = ruta + "mdx-ext-03.png";
-    var _4 = ruta + "mdx-ext-04.png";
-    var _5 = ruta + "mdx-ext-05.png";
-    var _6 = ruta + "mdx-ext-06.png";
-    var _7 = ruta + "mdx-ext-07.png";
-    var _8 = ruta + "mdx-ext-08.png";
-    var _9 = ruta + "mdx-ext-09.png";
-    var _10 = ruta + "mdx-ext-10.png";
-    var _11 = ruta + "mdx-ext-11.png";
-    var _12 = ruta + "mdx-ext-12.png";
-    var _13 = ruta + "mdx-ext-13.png";
-    var _14 = ruta + "mdx-ext-14.png";
-    var _15 = ruta + "mdx-ext-15.png";
-    var _16 = ruta + "mdx-ext-16.png";
-    var _17 = ruta + "mdx-ext-17.png";
-    var _18 = ruta + "mdx-ext-18.png";
-    var _19 = ruta + "mdx-ext-19.png";
-    var _20 = ruta + "mdx-ext-20.png";
-    var _21 = ruta + "mdx-ext-21.png";
-    var _22 = ruta + "mdx-ext-22.png";
-    var _23 = ruta + "mdx-ext-23.png";
-    var _24 = ruta + "mdx-ext-24.png";
 
     // Condicion para cambiar imagenes del 360
     range.addEventListener("input", function(){
@@ -164,18 +173,10 @@ function image_360(){
 
     // Habilitar funcion 360
     btn_360.addEventListener("click", function(){
-        var gif = "images/loading3.gif";
-        var loaders = [_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24];
-        var images = [];
-        
         btn_360.style.display = "none";
         range.style.display = "block";
         close.style.display = "block";
-        
-        for(var e=0; e<loaders.length; e++){
-            images[e] = new Image();
-            images[e].src = loaders[e];
-        }
+        image.src = _1;
     });
 
     // Deshabilitar funcion 360
