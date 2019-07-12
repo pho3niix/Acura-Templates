@@ -75,7 +75,7 @@ main#all{
         overflow: hidden;
         position: absolute;
         height: 60%;
-        width: 80%;
+        width: 55%;
         z-index: 2;
         display: none;
         // justify-content: center;
@@ -160,6 +160,7 @@ main#all{
                 color: rgb(255, 255, 255);
                 font-weight: 600;
                 width: 83%;
+                font-size: 1vw;
             }
             i{
                 font-size: 2vw;
@@ -170,7 +171,7 @@ main#all{
 
         #btn_int, #btn_out{
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: flex-end;
             width: 50%;
             height: 100%;

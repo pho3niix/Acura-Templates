@@ -1,4 +1,5 @@
 window.onload = function(){
+    footerMenu();
     var move1 = document.getElementById("btns_right");
     var move2 = document.getElementById("btns_left");
     var r_square = document.getElementById("r_square");
@@ -51,4 +52,23 @@ window.onload = function(){
             clicks = 0;
         }
     });
+}
+
+// Footer menu slide
+function footerMenu(){
+    var f_menu = document.getElementById("footerMenu");
+    var choose = document.getElementById("choose");
+    var r_close = document.getElementById("f_close");
+
+    choose.addEventListener("click", footer);
+
+    r_close.addEventListener("click", ft_close);
+
+    function footer(){
+        f_menu.style.height = "45vh";
+    }
+
+    function ft_close(){
+        f_menu.style.height = "0vh";
+    }
 }
