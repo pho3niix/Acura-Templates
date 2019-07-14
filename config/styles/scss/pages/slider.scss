@@ -108,6 +108,7 @@ main#s_all{
     flex-direction: row;
     position: relative;
     top: -4vh;
+    z-index: -1;
 
     section#s_info{
         display: flex;
