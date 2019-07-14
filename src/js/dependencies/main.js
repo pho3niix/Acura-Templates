@@ -253,7 +253,7 @@ function footerMenu(){
     r_close.addEventListener("click", ft_close);
 
     function footer(){
-        f_menu.style.height = "45vh";
+        f_menu.style.height = "40vh";
     }
 
     function ft_close(){
