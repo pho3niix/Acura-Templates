@@ -24,7 +24,7 @@
   "homepage": "https://github.com/pho3niix/Acura-Templates#readme",
   "devDependencies": {
     "sass": "^1.22.2",
-    "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.4"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
